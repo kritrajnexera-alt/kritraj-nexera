@@ -1,16 +1,21 @@
 import Hero from "@/components/hero/Hero";
+import DifferenceSplit from "@/components/home/DifferenceSplit";
+import SystemFlow from "@/components/home/SystemFlow";
+import BeforeAfter from "@/components/home/BeforeAfter";
+import FeaturedWork from "@/components/home/FeaturedWork";
+import Process from "@/components/home/Process";
+import FinalCTA from "@/components/home/FinalCTA";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
-      {/* Subsequent Home sections will be added in later stages:
-          - "Here's the Difference" split-screen comparison
-          - What the system is (flow)
-          - Before/after proof
-          - Featured work preview
-          - Process
-          - Final CTA */}
-    </main>
+      <DifferenceSplit />
+      <SystemFlow />
+      <BeforeAfter />
+      <FeaturedWork />
+      <Process />
+      <FinalCTA />
+    </>
   );
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const siteUrl = "https://kritrajnexera.com";
@@ -38,7 +40,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

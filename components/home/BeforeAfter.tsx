@@ -1,0 +1,80 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Inbox, AlertCircle, TrendingDown, Zap, Clock, TrendingUp } from "lucide-react";
+import Section from "@/components/Section";
+
+const easeOut = [0.25, 1, 0.5, 1] as const;
+
+const manual = [
+  { icon: Inbox, text: "Leads sit buried in an overflowing inbox" },
+  { icon: Clock, text: "First response takes hours — sometimes days" },
+  { icon: TrendingDown, text: "Hot leads cool off and quietly disappear" },
+];
+
+const withSystem = [
+  { icon: Zap, text: "Instant alert the moment a lead lands" },
+  { icon: Clock, text: "Response in under 60 seconds, every time" },
+  { icon: TrendingUp, text: "More follow-ups landed, more deals closed" },
+];
+
+export default function BeforeAfter() {
+  return (
+    <Section>
+      <div className="mx-auto mb-14 max-w-2xl text-center">
+        <p className="mb-3 text-sm font-medium text-brand-400">Proof</p>
+        <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
+          The same leads. Different outcome.
+        </h2>
+      </div>
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        {/* Before */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: easeOut }}
+          className="rounded-3xl border border-line bg-bg/40 p-8"
+        >
+          <div className="mb-6 flex items-center gap-2">
+            <AlertCircle className="h-5 w-5 text-red-400/70" />
+            <h3 className="font-semibold text-ink-muted">Manual process</h3>
+          </div>
+          <ul className="space-y-4">
+            {manual.map(({ icon: Icon, text }) => (
+              <li key={text} className="flex items-start gap-3">
+                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-red-400/60" />
+                <span className="text-ink-muted">{text}</span>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+
+        {/* After */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: easeOut, delay: 0.1 }}
+          className="rounded-3xl border border-brand-500/30 bg-brand-500/[0.05] p-8"
+        >
+          <div className="mb-6 flex items-center gap-2">
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500">
+              <Zap className="h-4 w-4 text-white" />
+            </div>
+            <h3 className="font-semibold text-ink">With the system</h3>
+          </div>
+          <ul className="space-y-4">
+            {withSystem.map(({ icon: Icon, text }) => (
+              <li key={text} className="flex items-start gap-3">
+                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-brand-400" />
+                <span className="text-ink">{text}</span>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      </div>
+    </Section>
+  );
+}

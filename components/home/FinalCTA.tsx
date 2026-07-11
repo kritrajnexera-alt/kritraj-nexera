@@ -1,0 +1,30 @@
+import { ArrowRight } from "lucide-react";
+import Section from "@/components/Section";
+import Button from "@/components/Button";
+
+export default function FinalCTA() {
+  return (
+    <Section>
+      <div className="relative overflow-hidden rounded-3xl border border-brand-500/20 bg-brand-500/[0.06] px-8 py-16 text-center sm:px-16 sm:py-20">
+        {/* Ambient glow */}
+        <div
+          aria-hidden
+          className="absolute left-1/2 top-0 -z-10 h-64 w-64 -translate-x-1/2 rounded-full bg-brand-500/20 blur-3xl"
+        />
+        <h2 className="mx-auto max-w-2xl text-[clamp(1.75rem,4vw,2.75rem)] font-semibold leading-tight text-ink">
+          See if this fits your business
+        </h2>
+        <p className="mx-auto mt-4 max-w-xl text-ink-muted">
+          Tell us how leads reach you today. We&apos;ll show you exactly where a
+          system would capture, route, and convert them — no obligation.
+        </p>
+        <div className="mt-8 flex justify-center">
+          <Button href="/contact" className="group">
+            Get a Quote
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+          </Button>
+        </div>
+      </div>
+    </Section>
+  );
+}
