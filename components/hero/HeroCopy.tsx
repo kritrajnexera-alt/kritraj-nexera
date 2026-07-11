@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
+import Image from "next/image";
 import Button from "@/components/Button";
 
 /**
@@ -16,6 +17,16 @@ export default function HeroCopy() {
       transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
       className="flex flex-col justify-center"
     >
+      {/* Logo mark in hero for brand presence */}
+      <Image
+        src="/logo.png"
+        alt=""
+        width={44}
+        height={44}
+        className="mb-6 opacity-80"
+        priority
+      />
+
       {/* Outcome-first eyebrow, not a generic "innovation" tag */}
       <p className="mb-5 text-sm font-medium text-brand-600">
         Growth systems for service businesses
