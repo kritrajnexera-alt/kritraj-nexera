@@ -156,7 +156,7 @@ export default function AboutPage() {
                 Ready to see what a system can do for your business?
               </span>
             </div>
-            <Button href="/contact">Get a Quote</Button>
+            <Button href="/contact">Book a Free Strategy Call</Button>
           </div>
         </Container>
       </section>

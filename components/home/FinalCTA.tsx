@@ -20,7 +20,7 @@ export default function FinalCTA() {
         </p>
         <div className="mt-8 flex justify-center">
           <Button href="/contact" className="group">
-            Get a Quote
+            Book a Free Strategy Call
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Button>
         </div>

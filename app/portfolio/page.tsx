@@ -144,7 +144,7 @@ export default function PortfolioPage() {
             <p className="mb-5 text-ink-muted">
               Want a system that produces results like these?
             </p>
-            <Button href="/contact">Get a Quote</Button>
+            <Button href="/contact">Book a Free Strategy Call</Button>
           </div>
         </Container>
       </section>

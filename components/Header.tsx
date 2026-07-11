@@ -47,7 +47,7 @@ export default function Header() {
 
           <div className="hidden md:block">
             <Button href="/contact" className="!px-4 !py-2">
-              Get a Quote
+              Book a Call
             </Button>
           </div>
 
@@ -82,7 +82,7 @@ export default function Header() {
                 </Link>
               ))}
               <Button href="/contact" className="mt-2 w-full">
-                Get a Quote
+                Book a Call
               </Button>
             </div>
           </Container>

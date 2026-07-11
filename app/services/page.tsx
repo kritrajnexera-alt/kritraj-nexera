@@ -110,7 +110,7 @@ export default function ServicesPage() {
                 </ul>
 
                 <Button href="/contact" className="mt-8 w-full" variant={tier.popular ? "primary" : "secondary"}>
-                  Get a Quote
+                  Book a Free Strategy Call
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </div>
