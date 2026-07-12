@@ -23,9 +23,10 @@ type Tier = {
 const tiers: Tier[] = [
   {
     name: "Starter System",
-    tagline: "Stop losing leads to a form nobody watches.",
+    tagline:
+      "Launch with a website that works for your business—not just your brand. Perfect for businesses taking their first step online. Capture every enquiry and receive instant WhatsApp and email notifications so you never miss a potential customer.",
     bestFor:
-      "Startups, freelancers, and local service businesses receiving up to 30 enquiries per month.",
+      "Startups, freelancers, local businesses, and service providers receiving up to 30 enquiries per month.",
     features: [
       "Mobile-responsive website with core pages",
       "Click-to-chat WhatsApp button",
@@ -37,9 +38,10 @@ const tiers: Tier[] = [
   },
   {
     name: "Growth System",
-    tagline: "Turn enquiries into a pipeline that moves itself.",
+    tagline:
+      "Turn every enquiry into a structured sales process. This system automatically captures, routes, tracks, and follows up with leads while keeping your CRM and team perfectly in sync.",
     bestFor:
-      "Growing businesses that need CRM integration, automated lead routing, and faster follow-ups.",
+      "Growing businesses that need faster response times, CRM integration, and automated lead management.",
     popular: true,
     features: [
       "Dynamic site: filterable listings, booking, or catalog",
@@ -52,9 +54,10 @@ const tiers: Tier[] = [
   },
   {
     name: "Premium System",
-    tagline: "A full growth engine that runs your business end-to-end.",
+    tagline:
+      "Build a complete growth engine that scales with your business. From lead capture and customer communication to payments, reporting, and internal operations, everything works together through intelligent automation.",
     bestFor:
-      "Businesses ready to automate their complete sales and operational workflow across multiple teams.",
+      "Established businesses ready to automate sales, operations, and customer management across multiple teams.",
     features: [
       "Full CMS-managed site your team can update",
       "End-to-end interconnected automation (custom API + database)",
@@ -70,10 +73,10 @@ const includedItems = [
   { icon: Monitor, label: "Mobile Responsive Design" },
   { icon: Zap, label: "Performance Optimisation" },
   { icon: Search, label: "Basic SEO Setup" },
-  { icon: Shield, label: "SSL & Security Configuration" },
-  { icon: BarChart3, label: "Analytics Integration" },
+  { icon: Shield, label: "SSL & Security" },
+  { icon: BarChart3, label: "Analytics & Conversion Tracking" },
   { icon: Globe, label: "Deployment on Your Domain" },
-  { icon: BookOpen, label: "Training & Handover" },
+  { icon: BookOpen, label: "Training & Complete Handover" },
   { icon: Headphones, label: "30 Days Post-Launch Support" },
 ];
 
@@ -94,10 +97,14 @@ export default function ServicesPage() {
               Choose the Right Sales Engine for Your Business
             </h1>
             <p className="mt-5 text-lg text-ink-muted">
-              Every system combines a high-performance website with intelligent
-              automation to capture leads, eliminate manual work, and help your
-              team respond faster, follow up automatically, and close more
-              business.
+              Every business loses leads differently. Some respond too late.
+              Others rely on manual follow-ups. We build websites powered by
+              intelligent automation that capture every enquiry, respond instantly,
+              and help your team close more business.
+            </p>
+            <p className="mt-4 text-sm text-ink-muted">
+              You&apos;re not choosing between three websites. You&apos;re choosing
+              how much of your business you want to automate.
             </p>
           </div>
         </Container>
@@ -155,9 +162,10 @@ export default function ServicesPage() {
           <div className="mt-16 rounded-3xl border border-line bg-surface/50 p-8 text-center sm:p-10">
             <h3 className="text-lg font-semibold text-ink">Recurring Care Plan</h3>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-muted">
-              Once your system is live, it needs keeping sharp — updates,
-              automation tweaks, and performance tuning month over month. Ongoing
-              support keeps your pipeline flowing.
+              Your business keeps evolving, and your automation should evolve
+              with it. We continuously improve workflows, monitor performance,
+              resolve issues, and introduce new automations to keep your sales
+              engine performing at its best.
             </p>
             <Button href="/contact" variant="secondary" className="mt-6">
               Ask about ongoing support
@@ -166,16 +174,16 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      {/* Everything Included */}
+      {/* Every System Comes Ready for Growth */}
       <Section muted>
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <p className="mb-3 text-sm font-medium text-brand-400">What you get</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Everything Included in Every Project
+            Every System Comes Ready for Growth
           </h2>
           <p className="mt-4 text-ink-muted">
-            Every system we build follows the same quality standards — regardless
-            of the package you choose.
+            Every project follows the same high standards for performance,
+            security, scalability, and long-term reliability.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -232,7 +240,7 @@ export default function ServicesPage() {
           <p className="mx-auto mt-4 max-w-xl text-ink-muted">
             Let&apos;s map your current sales process and show you exactly how a
             website powered by intelligent automation can help you capture more
-            leads, respond instantly, and scale your business.
+            leads, respond faster, and grow with confidence.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button href="/contact" className="group">
