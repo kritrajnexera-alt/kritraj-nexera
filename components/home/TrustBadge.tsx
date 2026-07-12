@@ -2,31 +2,34 @@
 
 import { motion } from "framer-motion";
 import Container from "@/components/Container";
-import { easeOut } from "@/lib/utils";
+
+const easeOut = [0.25, 1, 0.5, 1] as const;
 
 const stats = [
-  { value: "50+", label: "Active lead systems" },
-  { value: "<15s", label: "Avg. first response" },
-  { value: "4x", label: "Lead conversion lift" },
-  { value: "99.9%", label: "Automation uptime" },
+  { value: "50+", label: "Systems Shipped" },
+  { value: "200+", label: "Leads Captured Monthly" },
+  { value: "<60s", label: "Average Response Time" },
+  { value: "99.9%", label: "Uptime Guaranteed" },
 ];
 
 export default function TrustBadge() {
   return (
     <section className="border-y border-line/60 bg-surface/30">
-      <Container className="py-8">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-          {stats.map((s, i) => (
+      <Container>
+        <div className="grid grid-cols-2 gap-6 py-10 sm:py-12 md:grid-cols-4">
+          {stats.map(({ value, label }, i) => (
             <motion.div
-              key={s.label}
-              initial={{ opacity: 0, y: 8 }}
+              key={label}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, ease: easeOut, delay: i * 0.08 }}
               className="text-center"
             >
-              <p className="text-2xl font-bold text-brand-400 sm:text-3xl">{s.value}</p>
-              <p className="mt-1 text-xs text-ink-muted">{s.label}</p>
+              <p className="text-2xl font-semibold text-brand-400 sm:text-3xl">
+                {value}
+              </p>
+              <p className="mt-1 text-xs text-ink-muted sm:text-sm">{label}</p>
             </motion.div>
           ))}
         </div>

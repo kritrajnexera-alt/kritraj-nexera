@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Container from "@/components/Container";
-import DemoContent from "./DemoContent";
+import DemoPageClient from "./DemoPageClient";
 
 export const metadata: Metadata = {
   title: "Live Demo",
@@ -25,9 +25,10 @@ export default function DemoPage() {
           </div>
         </Container>
       </section>
+
       <section className="py-20 sm:py-28">
         <Container>
-          <DemoContent />
+          <DemoPageClient />
         </Container>
       </section>
     </>

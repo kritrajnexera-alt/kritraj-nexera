@@ -1,42 +1,81 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Workflow, Bell, BarChart3 } from "lucide-react";
+import { User, Globe, Workflow, Trophy } from "lucide-react";
 import Section from "@/components/Section";
-import SectionHeading from "@/components/SectionHeading";
-import { easeOut } from "@/lib/utils";
+
+const easeOut = [0.25, 1, 0.5, 1] as const;
 
 const steps = [
-  { icon: Globe, title: "Smart Website", desc: "Built to capture qualified leads 24/7" },
-  { icon: Workflow, title: "n8n Automation", desc: "Routes every lead instantly" },
-  { icon: Bell, title: "Instant Notifications", desc: "Email, WhatsApp, and Slack alerts" },
-  { icon: BarChart3, title: "Track & Optimize", desc: "Know which channels perform" },
+  {
+    icon: User,
+    title: "Visitor",
+    desc: "A prospect finds you through search, ads, or a referral.",
+  },
+  {
+    icon: Globe,
+    title: "Website",
+    desc: "Your site captures the enquiry — form, chat, or booking.",
+  },
+  {
+    icon: Workflow,
+    title: "Automation",
+    desc: "The lead is instantly routed, tagged, and notified.",
+  },
+  {
+    icon: Trophy,
+    title: "You Close",
+    desc: "You step in to close the sale — everything else ran itself.",
+  },
 ];
 
 export default function SystemFlow() {
   return (
-    <Section>
-      <SectionHeading tag="How it works" title="What the system does" />
-      <div className="grid gap-6 md:grid-cols-4">
-        {steps.map((s, i) => (
-          <div key={s.title} className="relative">
+    <Section id="system" muted>
+      <div className="mx-auto mb-14 max-w-2xl text-center">
+        <p className="mb-3 text-sm font-medium text-brand-400">How it works</p>
+        <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
+          One system, start to sale
+        </h2>
+        <p className="mt-4 text-ink-muted">
+          Website and automation aren&apos;t two services bolted together.
+          They&apos;re one pipeline — the site captures, the system converts.
+        </p>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-4">
+        {steps.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="relative">
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: easeOut, delay: i * 0.1 }}
-              className="flex flex-col items-center text-center"
+              className="h-full rounded-2xl border border-line bg-surface p-6"
             >
-              <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-500/10 text-brand-400">
-                <s.icon className="h-6 w-6" />
+              <div className="mb-4 flex items-center gap-3">
+                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-500/15 text-brand-400">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <span className="text-xs font-medium text-ink-muted">
+                  Step {i + 1}
+                </span>
               </div>
-              <h3 className="mb-2 font-semibold text-ink">{s.title}</h3>
-              <p className="text-sm text-ink-muted">{s.desc}</p>
+              <h3 className="mb-2 font-semibold text-ink">{title}</h3>
+              <p className="text-sm leading-relaxed text-ink-muted">{desc}</p>
             </motion.div>
+
+            {/* Connector arrow */}
             {i < steps.length - 1 && (
-              <div className="hidden md:block absolute right-0 top-7 -mr-4 text-brand-500/30">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <div className="absolute -right-3 top-1/2 hidden -translate-y-1/2 md:block">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+                  <path
+                    d="M1 7H17M17 7L12 2M17 7L12 12"
+                    stroke="var(--color-brand-500)"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
             )}

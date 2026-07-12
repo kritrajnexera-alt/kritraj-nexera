@@ -12,33 +12,34 @@ const variants: Record<Variant, string> = {
 
 type ButtonProps = {
   children: React.ReactNode;
-  href?: string;
+  href: string;
   variant?: Variant;
   className?: string;
-  type?: "button" | "submit";
-  disabled?: boolean;
 };
 
+/**
+ * Minimal link-button. Two variants only — no premature abstraction.
+ * Renders a Next.js <Link> so it works for both internal routes and
+ * in-page anchors (href="#system").
+ */
 export default function Button({
   children,
   href,
   variant = "primary",
   className,
-  type,
-  disabled,
 }: ButtonProps) {
-  const classes = cn(
-    "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3",
-    "text-sm font-medium transition-colors duration-200",
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
-    variants[variant],
-    disabled && "cursor-not-allowed opacity-60",
-    className,
+  return (
+    <Link
+      href={href}
+      className={cn(
+        "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3",
+        "text-sm font-medium transition-colors duration-200",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-bg",
+        variants[variant],
+        className,
+      )}
+    >
+      {children}
+    </Link>
   );
-
-  if (type === "submit" || type === "button") {
-    return <button type={type} disabled={disabled} className={classes}>{children}</button>;
-  }
-
-  return <Link href={href!} className={classes}>{children}</Link>;
 }

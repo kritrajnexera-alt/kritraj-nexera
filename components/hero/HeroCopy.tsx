@@ -5,6 +5,10 @@ import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
 import Button from "@/components/Button";
 
+/**
+ * Left column of the hero — asymmetric layout anchor.
+ * Headline uses brand blue solid on the second clause (no gradient text).
+ */
 export default function HeroCopy() {
   return (
     <motion.div
@@ -13,28 +17,48 @@ export default function HeroCopy() {
       transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
       className="flex flex-col justify-center"
     >
-      <Image src="/logo.png" alt="" width={44} height={44} className="mb-6 opacity-80" priority />
-      <p className="mb-5 text-sm font-medium text-brand-600">Growth systems for service businesses</p>
-      <h1 className="text-[clamp(2.5rem,6vw,4.25rem)] font-semibold leading-[1.05] text-ink">
-        We Don&apos;t Build Sites.<br />
+      {/* Logo mark in hero for brand presence */}
+      <Image
+        src="/logo.png"
+        alt=""
+        width={44}
+        height={44}
+        className="mb-6 opacity-80"
+        priority
+      />
+
+      {/* Outcome-first eyebrow, not a generic "innovation" tag */}
+      <p className="mb-5 text-sm font-medium text-brand-600">
+        Growth systems for service businesses
+      </p>
+
+      <h1 className="text-[clamp(2.5rem,6vw,4.25rem)] font-semibold leading-[1.05] tracking-tight text-ink">
+        We Don&apos;t Build Sites.
+        <br />
         <span className="text-brand-500">We Build Sales Engines.</span>
       </h1>
+
       <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
         A website that captures qualified leads, wired to automation that routes,
         notifies, and follows up — so prospects get a response in seconds, not
         days, and more of them turn into closed sales.
       </p>
+
       <div className="mt-8 flex flex-wrap items-center gap-3">
         <Button href="/contact" className="group">
           Book a Free Strategy Call
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
         </Button>
-        <Button href="/demo" variant="secondary">Try Live Demo</Button>
+        <Button href="/demo" variant="secondary" className="group">
+          Try Live Demo
+        </Button>
         <Button href="#system" variant="secondary" className="group">
           <Play className="h-3.5 w-3.5 text-brand-500" />
           See the system
         </Button>
       </div>
+
+      {/* Trust row — concrete, not a logo strip of fake clients */}
       <div className="mt-10 flex items-center gap-6 text-sm text-ink-muted">
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
