@@ -9,6 +9,10 @@ import {
   Bell,
   BarChart3,
   Users,
+  Bot,
+  CheckCircle2,
+  Target,
+  RefreshCw,
 } from "lucide-react";
 import Section from "@/components/Section";
 
@@ -22,10 +26,20 @@ const brochureFailures = [
 ];
 
 const systemWins = [
-  { icon: Bell, label: "Instant WhatsApp + email alert the second a lead lands" },
-  { icon: Zap, label: "Auto-routed to the right person in under 60 seconds" },
-  { icon: Users, label: "Dropped straight into your CRM, tagged and scored" },
-  { icon: BarChart3, label: "One dashboard: where leads came from, what closed" },
+  { icon: Zap, label: "Instant WhatsApp & Email Alerts" },
+  { icon: Target, label: "Automatically assign every lead to the right team member" },
+  { icon: BarChart3, label: "Track every enquiry from first click to closed sale" },
+  { icon: RefreshCw, label: "Automated follow-ups so no opportunity is missed" },
+];
+
+const workflowSteps = [
+  "Lead Submitted",
+  "Lead Validated",
+  "CRM Updated",
+  "WhatsApp Notification Sent",
+  "Email Notification Sent",
+  "Sales Team Assigned",
+  "Follow-up Started",
 ];
 
 const bottomCallouts = [
@@ -104,45 +118,84 @@ export default function DifferenceSplit() {
           transition={{ duration: 0.5, ease: easeOut }}
           className="relative bg-brand-500/[0.04] p-8"
         >
-          {/* Live-feeling dashboard card cluster */}
-          <div className="mb-6 grid grid-cols-2 gap-3">
-            <div className="rounded-xl border border-brand-500/20 bg-surface p-3">
-              <div className="flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
-                <Users className="h-3.5 w-3.5" /> New Leads
+          {/* Premium stat cards */}
+          <div className="mb-4 grid grid-cols-2 gap-3">
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, ease: easeOut, delay: 0.1 }}
+              className="rounded-xl border border-brand-500/20 bg-surface p-4"
+            >
+              <div className="mb-2 flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
+                <Zap className="h-3.5 w-3.5" /> Lead Response
               </div>
-              <p className="mt-1 text-2xl font-semibold text-ink">47</p>
-              <p className="text-[10px] text-brand-400">▲ 23% this week</p>
-            </div>
-            <div className="rounded-xl border border-brand-500/20 bg-surface p-3">
-              <div className="flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
-                <Zap className="h-3.5 w-3.5" /> Deals Won
+              <p className="text-2xl font-semibold text-ink">&lt; 60 sec</p>
+              <p className="mt-0.5 text-[10px] text-ink-muted">
+                Average Response Time
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, ease: easeOut, delay: 0.15 }}
+              className="rounded-xl border border-brand-500/20 bg-surface p-4"
+            >
+              <div className="mb-2 flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
+                <Bot className="h-3.5 w-3.5" /> Automation Status
               </div>
-              <p className="mt-1 text-2xl font-semibold text-ink">12</p>
-              <p className="text-[10px] text-brand-400">▲ 41% this week</p>
-            </div>
+              <p className="text-2xl font-semibold text-ink">24/7</p>
+              <p className="mt-0.5 text-[10px] text-ink-muted">Always Active</p>
+            </motion.div>
           </div>
 
-          {/* Mini chart bar */}
-          <div className="mb-6 rounded-xl border border-line bg-surface p-3">
-            <div className="mb-2 flex items-center justify-between">
-              <span className="text-[11px] font-medium text-ink-muted">
-                Pipeline
-              </span>
-              <TrendingUp className="h-3.5 w-3.5 text-brand-400" />
+          {/* Live Sales Engine workflow */}
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, ease: easeOut, delay: 0.2 }}
+            className="mb-6 rounded-xl border border-line bg-surface p-4"
+          >
+            <div className="mb-3 flex items-center gap-2 text-[11px] font-medium text-brand-400">
+              <Bot className="h-3.5 w-3.5" /> Live Sales Engine
             </div>
-            <div className="flex h-16 items-end gap-1.5">
-              {[35, 50, 42, 65, 58, 80, 72].map((h, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ height: 0 }}
-                  whileInView={{ height: `${h}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, ease: easeOut, delay: i * 0.06 }}
-                  className="flex-1 rounded-t bg-brand-500/60"
-                />
-              ))}
+            <div className="relative">
+              {/* Persistent vertical connecting line */}
+              <motion.div
+                initial={{ height: 0 }}
+                whileInView={{ height: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, ease: easeOut, delay: 0.3 }}
+                className="absolute left-[11px] top-1 w-px bg-brand-500/30"
+              />
+              <div className="space-y-5">
+                {workflowSteps.map((step, i) => (
+                  <div key={step} className="relative flex items-center gap-3">
+                    <motion.div
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.25, ease: easeOut, delay: 0.25 + i * 0.08 }}
+                      className="relative z-10 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-400/15"
+                    >
+                      <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />
+                    </motion.div>
+                    <motion.span
+                      initial={{ opacity: 0, x: -4 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, ease: easeOut, delay: 0.3 + i * 0.08 }}
+                      className="text-xs text-ink"
+                    >
+                      {step}
+                    </motion.span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          </motion.div>
 
           <div className="mb-4 flex items-center gap-2">
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500">
@@ -161,7 +214,8 @@ export default function DifferenceSplit() {
           </ul>
 
           <p className="mt-6 border-t border-line pt-4 text-sm italic text-ink">
-            A system does the work — it runs even when you&apos;re not there.
+            Your sales engine captures, routes, follows up, and tracks every lead
+            automatically — even while you sleep.
           </p>
         </motion.div>
       </div>
