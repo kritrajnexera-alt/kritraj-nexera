@@ -1,10 +1,5 @@
 import { cn } from "@/lib/utils";
 
-/**
- * Centered max-width wrapper with responsive horizontal padding.
- * Keeps content from going edge-to-edge on large screens while
- * staying roomy on mobile.
- */
 export default function Container({
   children,
   className,

@@ -1,10 +1,6 @@
 import { cn } from "@/lib/utils";
 import Container from "./Container";
 
-/**
- * Page section wrapper with consistent vertical rhythm.
- * Optional `muted` for a slightly-raised surface band.
- */
 export default function Section({
   children,
   className,

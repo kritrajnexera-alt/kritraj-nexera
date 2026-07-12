@@ -1,62 +1,42 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Search, Layers, Workflow, Rocket } from "lucide-react";
+import { Search, PenTool, Workflow, TrendingUp } from "lucide-react";
 import Section from "@/components/Section";
-
-const easeOut = [0.25, 1, 0.5, 1] as const;
+import SectionHeading from "@/components/SectionHeading";
+import { easeOut } from "@/lib/utils";
 
 const steps = [
-  {
-    icon: Search,
-    title: "Understand your funnel",
-    desc: "We map how leads currently reach you — and where they slip through.",
-  },
-  {
-    icon: Layers,
-    title: "Design the system",
-    desc: "Site structure and automation flows, designed around one goal: more closed sales.",
-  },
-  {
-    icon: Workflow,
-    title: "Build & wire it together",
-    desc: "Website, workflows, and integrations built and connected into one pipeline.",
-  },
-  {
-    icon: Rocket,
-    title: "Launch & refine",
-    desc: "We go live, monitor what converts, and tune the system to perform better over time.",
-  },
+  { icon: Search, title: "Audit", desc: "We map how leads reach you today and find where they slip through." },
+  { icon: PenTool, title: "Design", desc: "We design a site-plus-automation system that fits your specific funnel." },
+  { icon: Workflow, title: "Build & Wire", desc: "We build the site and connect it to n8n, CRM, email, and WhatsApp." },
+  { icon: TrendingUp, title: "Launch & Optimize", desc: "Live. Then we tune the flow based on real data." },
 ];
 
 export default function Process() {
   return (
     <Section>
-      <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">How we work</p>
-        <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-          Four steps to a system that sells
-        </h2>
-      </div>
-
-      <div className="relative grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        {steps.map(({ icon: Icon, title, desc }, i) => (
+      <SectionHeading tag="Our process" title="From audit to live system" />
+      <div className="grid gap-8 md:grid-cols-4">
+        {steps.map((s, i) => (
           <motion.div
-            key={title}
+            key={s.title}
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: easeOut, delay: i * 0.1 }}
-            className="relative"
+            className="flex flex-col items-center text-center"
           >
-            <div className="mb-4 flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400">
-                <Icon className="h-5 w-5" />
+            <div className="relative mb-5">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-500/20 bg-brand-500/5 text-brand-400">
+                <s.icon className="h-6 w-6" />
+              </div>
+              <span className="absolute -right-2 -top-1 flex h-6 w-6 items-center justify-center rounded-full bg-brand-500 text-[11px] font-bold text-white">
+                0{i + 1}
               </span>
-              <span className="text-2xl font-semibold text-line">0{i + 1}</span>
             </div>
-            <h3 className="mb-2 font-semibold text-ink">{title}</h3>
-            <p className="text-sm leading-relaxed text-ink-muted">{desc}</p>
+            <h3 className="mb-2 font-semibold text-ink">{s.title}</h3>
+            <p className="text-sm leading-relaxed text-ink-muted">{s.desc}</p>
           </motion.div>
         ))}
       </div>
