@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 const siteUrl = "https://kritrajnexera.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/services", "/portfolio", "/about", "/contact"];
+  const routes = ["", "/services", "/portfolio", "/about", "/contact", "/diagnostic", "/demo"];
   const lastModified = new Date();
 
   return routes.map((route) => ({
