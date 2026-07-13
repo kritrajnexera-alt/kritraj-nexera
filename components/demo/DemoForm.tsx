@@ -98,7 +98,7 @@ export default function DemoForm({ onSuccess, disabled = false }: DemoFormProps)
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
-      className="rounded-2xl border border-line/50 bg-surface/60 p-6 backdrop-blur-xl sm:p-8"
+      className="rounded-2xl border border-line/50 bg-surface p-6 sm:p-8"
     >
       <div className="mb-6">
         <h2 className="text-lg font-semibold text-ink">Submit a Sample Inquiry</h2>
@@ -192,7 +192,7 @@ export default function DemoForm({ onSuccess, disabled = false }: DemoFormProps)
             name="message"
             rows={3}
             placeholder="Any specific question or scenario you'd like to see?"
-            className="w-full resize-none rounded-xl border border-line bg-bg px-4 py-3 text-sm text-ink transition-colors placeholder:text-ink-muted/50 focus:border-brand-400 focus:outline-none focus:ring-1 focus:ring-brand-400"
+            className="w-full resize-none rounded-xl border border-line bg-bg px-4 py-3 text-sm text-ink transition-colors placeholder:text-ink-muted/70 focus:border-brand-400 focus:outline-none focus:ring-1 focus:ring-brand-400"
           />
         </div>
 
@@ -209,7 +209,7 @@ export default function DemoForm({ onSuccess, disabled = false }: DemoFormProps)
         <button
           type="submit"
           disabled={status === "loading" || disabled}
-          className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 text-sm font-medium text-white shadow-sm shadow-brand-600/20 transition-all hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+          className="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-3 text-sm font-medium text-white shadow-sm shadow-brand-600/20 transition-all hover:bg-brand-600 active:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
         >
           {status === "loading" ? (
             <>
@@ -257,7 +257,7 @@ function Field({
         required={required}
         placeholder={placeholder}
         onBlur={onBlur}
-        className={`w-full rounded-xl border bg-bg px-4 py-3 text-sm text-ink transition-colors placeholder:text-ink-muted/50 focus:border-brand-400 focus:outline-none focus:ring-1 focus:ring-brand-400 ${
+        className={`w-full rounded-xl border bg-bg px-4 py-3 text-sm text-ink transition-colors placeholder:text-ink-muted/70 focus:border-brand-400 focus:outline-none focus:ring-1 focus:ring-brand-400 ${
           error ? "border-red-400/50" : "border-line"
         }`}
       />

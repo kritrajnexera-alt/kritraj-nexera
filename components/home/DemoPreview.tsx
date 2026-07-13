@@ -26,9 +26,6 @@ export default function DemoPreview() {
         transition={{ duration: 0.5, ease: easeOut }}
         className="mx-auto mb-12 max-w-2xl text-center"
       >
-        <p className="mb-3 text-sm font-medium text-brand-400">
-          See it in action
-        </p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           See Our Sales Engine in Action
         </h2>

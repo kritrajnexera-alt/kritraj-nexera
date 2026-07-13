@@ -2,49 +2,54 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
-import Image from "next/image";
 import Button from "@/components/Button";
 
 /**
  * Left column of the hero — asymmetric layout anchor.
  * Headline uses brand blue solid on the second clause (no gradient text).
  */
+const easeOut = [0.25, 1, 0.5, 1] as const;
+
 export default function HeroCopy() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 16 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
-      className="flex flex-col justify-center"
-    >
-      {/* Logo mark in hero for brand presence */}
-      <Image
-        src="/logo.png"
-        alt=""
-        width={44}
-        height={44}
-        className="mb-6 opacity-80"
-        priority
-      />
-
-      {/* Outcome-first eyebrow, not a generic "innovation" tag */}
-      <p className="mb-5 text-sm font-medium text-brand-600">
+    <div className="flex flex-col justify-center">
+      <motion.p
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: easeOut }}
+        className="mb-5 text-sm font-medium text-brand-600"
+      >
         Growth systems for service businesses
-      </p>
+      </motion.p>
 
-      <h1 className="text-[clamp(2.5rem,6vw,4.25rem)] font-semibold leading-[1.05] tracking-tight text-ink">
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: easeOut, delay: 0.1 }}
+        className="text-[clamp(2.5rem,6vw,4.25rem)] font-semibold leading-[1.05] tracking-tight text-ink"
+      >
         We Don&apos;t Build Sites.
         <br />
         <span className="text-brand-500">We Build Sales Engines.</span>
-      </h1>
+      </motion.h1>
 
-      <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
+      <motion.p
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: easeOut, delay: 0.2 }}
+        className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted"
+      >
         A website that captures qualified leads, wired to automation that routes,
         notifies, and follows up — so prospects get a response in seconds, not
         days, and more of them turn into closed sales.
-      </p>
+      </motion.p>
 
-      <div className="mt-8 flex flex-wrap items-center gap-3">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: easeOut, delay: 0.3 }}
+        className="mt-8 flex flex-wrap items-center gap-3"
+      >
         <Button href="/contact" className="group">
           Book a Free Strategy Call
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -56,10 +61,14 @@ export default function HeroCopy() {
           <Play className="h-3.5 w-3.5 text-brand-500" />
           See the system
         </Button>
-      </div>
+      </motion.div>
 
-      {/* Trust row — concrete, not a logo strip of fake clients */}
-      <div className="mt-10 flex items-center gap-6 text-sm text-ink-muted">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, ease: easeOut, delay: 0.4 }}
+        className="mt-10 flex items-center gap-6 text-sm text-ink-muted"
+      >
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
           Lead response under 60 seconds
@@ -69,7 +78,7 @@ export default function HeroCopy() {
           <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
           Built on n8n + Next.js
         </span>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }

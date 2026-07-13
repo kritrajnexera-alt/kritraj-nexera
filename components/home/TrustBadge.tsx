@@ -63,9 +63,12 @@ function CountUp({
 
 export default function TrustBadge() {
   return (
-    <section className="border-y border-line/60 bg-surface/30">
+    <section className="relative border-y border-line/60 bg-surface/30">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+        <div className="h-24 w-[600px] rounded-full bg-brand-500/5" />
+      </div>
       <Container>
-        <div className="grid grid-cols-2 gap-6 py-10 sm:py-12 md:grid-cols-4">
+        <div className="relative grid grid-cols-2 gap-6 py-10 sm:py-12 md:grid-cols-4">
           {stats.map(({ value, prefix, suffix, decimals, label }, i) => (
             <motion.div
               key={label}

@@ -22,7 +22,6 @@ export default function BeforeAfter() {
   return (
     <Section>
       <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">Proof</p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           The same leads. Different outcome.
         </h2>
@@ -35,7 +34,7 @@ export default function BeforeAfter() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: easeOut }}
-          className="rounded-3xl border border-line bg-bg/40 p-8"
+          className="rounded-3xl border border-line bg-surface p-8"
         >
           <div className="mb-6 flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-red-400/70" />

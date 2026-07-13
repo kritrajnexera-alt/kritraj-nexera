@@ -33,7 +33,6 @@ export default function Process() {
   return (
     <Section>
       <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">How we work</p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           Four steps to a system that sells
         </h2>

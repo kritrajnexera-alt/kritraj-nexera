@@ -71,7 +71,7 @@ export default function SystemInMotion() {
       {/* Ambient glow in brand blue — reads on dark, not a generic blob */}
       <div
         aria-hidden
-        className="absolute -inset-8 -z-10 rounded-[2.5rem] bg-brand-500/15 blur-3xl"
+        className="absolute -inset-8 -z-10 rounded-[2.5rem] bg-brand-500/15"
       />
 
       <div className="flex flex-col items-stretch gap-0">
@@ -82,8 +82,8 @@ export default function SystemInMotion() {
             New lead captured
           </div>
           <div className="space-y-1.5">
-            <div className="h-2 w-3/4 rounded-full bg-white/10" />
-            <div className="h-2 w-1/2 rounded-full bg-white/10" />
+            <div className="h-2 w-3/4 rounded-full bg-black/5" />
+            <div className="h-2 w-1/2 rounded-full bg-black/5" />
           </div>
           <div className="mt-2.5 inline-flex items-center gap-1 rounded-md bg-brand-500/15 px-2 py-0.5 text-[11px] font-medium text-brand-300">
             <motion.span

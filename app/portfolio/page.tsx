@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 type Project = {
   tag: string;
+  gradient: string;
   title: string;
   problem: string;
   solution: string;
@@ -21,6 +22,7 @@ type Project = {
 const projects: Project[] = [
   {
     tag: "Real Estate",
+    gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
     title: "Property firm lead-to-tour system",
     problem:
       "Enquiries piled up in a shared inbox. Agents called back hours later. Hot buyers booked elsewhere.",
@@ -30,6 +32,7 @@ const projects: Project[] = [
   },
   {
     tag: "Healthcare",
+    gradient: "from-emerald-500/20 via-teal-500/10 to-transparent",
     title: "Dental practice appointment engine",
     problem:
       "Front desk spent 3+ hours daily juggling calls, reminders, and no-shows. Patients waited days for a slot.",
@@ -39,6 +42,7 @@ const projects: Project[] = [
   },
   {
     tag: "E-commerce",
+    gradient: "from-amber-500/20 via-orange-500/10 to-transparent",
     title: "Retailer catalog + order routing",
     problem:
       "Orders came through WhatsApp, email, and phone — none of them tracked. Inventory was a guessing game.",
@@ -48,6 +52,7 @@ const projects: Project[] = [
   },
   {
     tag: "Education",
+    gradient: "from-violet-500/20 via-purple-500/10 to-transparent",
     title: "Coaching institute enrolment funnel",
     problem:
       "Ad leads landed on a static page with a broken form. Nobody knew which campaign actually converted.",
@@ -57,6 +62,7 @@ const projects: Project[] = [
   },
   {
     tag: "Professional Services",
+    gradient: "from-sky-500/20 via-blue-500/10 to-transparent",
     title: "Law firm intake automation",
     problem:
       "Potential clients filled a form and waited days for a reply. Most hired a competitor in the meantime.",
@@ -66,6 +72,7 @@ const projects: Project[] = [
   },
   {
     tag: "Hospitality",
+    gradient: "from-rose-500/20 via-pink-500/10 to-transparent",
     title: "Restaurant reservation + retention system",
     problem:
       "Reservations came from five channels. No-shows were killing margins and there was no way to bring guests back.",
@@ -82,7 +89,6 @@ export default function PortfolioPage() {
       <section className="border-b border-line py-20 sm:py-28">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-sm font-medium text-brand-400">Portfolio</p>
             <h1 className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] text-ink">
               Outcomes, not screenshots
             </h1>
@@ -101,9 +107,11 @@ export default function PortfolioPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {projects.map((p, i) => (
               <Reveal key={p.title} delay={i * 0.08} direction={i % 2 === 0 ? "up" : "down"}>
-                <article className="group flex flex-col rounded-3xl border border-line bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/30 hover:shadow-lg hover:shadow-brand-500/5">
+                <article className="group flex flex-col rounded-3xl border border-line bg-surface overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/30 hover:shadow-lg hover:shadow-brand-500/5">
+                <div className={`h-32 bg-gradient-to-br ${p.gradient}`} />
+                <div className="flex flex-1 flex-col p-8 pt-6">
                 <div className="mb-5 flex items-center justify-between">
-                  <span className="rounded-md bg-white/5 px-2.5 py-1 text-xs font-medium text-ink-muted">
+                  <span className="rounded-md bg-surface px-2.5 py-1 text-xs font-medium text-ink-muted">
                     {p.tag}
                   </span>
                   <ArrowUpRight className="h-4 w-4 text-ink-muted transition-colors group-hover:text-brand-400" />
@@ -115,13 +123,13 @@ export default function PortfolioPage() {
 
                 <div className="flex-1 space-y-4 text-sm">
                   <div>
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-red-400/70">
+                    <p className="mb-1 text-xs font-medium text-red-400/70">
                       The problem
                     </p>
                     <p className="leading-relaxed text-ink-muted">{p.problem}</p>
                   </div>
                   <div>
-                    <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+                    <p className="mb-1 text-xs font-medium text-ink-muted">
                       The system
                     </p>
                     <p className="leading-relaxed text-ink-muted">{p.solution}</p>
@@ -134,6 +142,7 @@ export default function PortfolioPage() {
                     {p.result}
                   </span>
                 </div>
+              </div>
               </article>
               </Reveal>
             ))}

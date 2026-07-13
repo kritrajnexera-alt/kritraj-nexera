@@ -17,7 +17,6 @@ export default function ContactPage() {
       <section className="border-b border-line py-20 sm:py-28">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-3 text-sm font-medium text-brand-400">Contact</p>
             <h1 className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] text-ink">
               Let&apos;s build your system
             </h1>
@@ -115,9 +114,6 @@ export default function ContactPage() {
       <section className="border-t border-line py-14 sm:py-20">
         <Container>
           <div className="mx-auto mb-10 max-w-2xl text-center">
-            <p className="mb-3 text-sm font-medium text-brand-400">
-              Prefer to book directly?
-            </p>
             <h2 className="text-[clamp(1.75rem,4vw,2.5rem)] font-semibold leading-tight text-ink">
               Pick a time that works for you
             </h2>

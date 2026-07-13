@@ -31,7 +31,6 @@ export default function Testimonials() {
   return (
     <Section muted>
       <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">Client results</p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           Businesses that stopped losing leads
         </h2>

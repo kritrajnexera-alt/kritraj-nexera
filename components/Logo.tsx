@@ -11,9 +11,9 @@ export default function Logo({ className }: { className?: string }) {
       <Image
         src="/logo.png"
         alt="KritRaj Nexera logo"
-        width={32}
-        height={32}
-        className="h-8 w-8 shrink-0 transition-transform group-hover:scale-105"
+        width={1535}
+        height={1024}
+        className="h-8 w-auto shrink-0 transition-transform group-hover:scale-105"
         priority
       />
       <span className="flex flex-col leading-none">

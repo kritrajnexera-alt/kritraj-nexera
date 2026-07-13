@@ -8,7 +8,7 @@ type Status = "idle" | "running" | "completed" | "error";
 
 export default function DemoPageClient() {
   const [status, setStatus] = useState<Status>("idle");
-  const [, setSubmissionData] = useState<Record<string, string> | null>(null);
+  const [submissionData, setSubmissionData] = useState<Record<string, string> | null>(null);
 
   const handleSuccess = useCallback((data: Record<string, string>) => {
     setSubmissionData(data);
@@ -30,7 +30,11 @@ export default function DemoPageClient() {
         />
       </div>
       <div>
-        <AutomationTimeline status={status} onStatusChange={handleStatusChange} />
+        <AutomationTimeline
+          status={status}
+          onStatusChange={handleStatusChange}
+          leadData={submissionData ?? undefined}
+        />
       </div>
     </div>
   );

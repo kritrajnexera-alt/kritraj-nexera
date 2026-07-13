@@ -8,7 +8,6 @@ import {
   Zap,
   Bell,
   BarChart3,
-  Users,
   Bot,
   CheckCircle2,
   Target,
@@ -53,9 +52,6 @@ export default function DifferenceSplit() {
   return (
     <Section id="difference">
       <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">
-          Here&apos;s the difference
-        </p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           A brochure sits there.
           <br />
@@ -74,7 +70,7 @@ export default function DifferenceSplit() {
           className="relative border-b border-line p-8 lg:border-b-0 lg:border-r"
         >
           {/* Desaturated mock browser */}
-          <div className="mb-6 rounded-xl border border-line bg-bg/50 p-1 opacity-60">
+          <div className="mb-6 rounded-xl border border-line bg-surface p-1 opacity-60">
             <div className="flex gap-1.5 px-2 py-1.5">
               <span className="h-2 w-2 rounded-full bg-line" />
               <span className="h-2 w-2 rounded-full bg-line" />

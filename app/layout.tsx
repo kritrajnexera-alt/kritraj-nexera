@@ -9,7 +9,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
-const siteUrl = "https://kritrajnexera.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kritrajnexera.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail } from "lucide-react";
 import Container from "./Container";
 import Logo from "./Logo";
 
@@ -40,7 +40,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div variants={item}>
-            <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+            <h4 className="mb-3 text-xs font-semibold text-ink-muted">
               Navigate
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -54,7 +54,7 @@ export default function Footer() {
           </motion.div>
 
           <motion.div variants={item}>
-            <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-ink-muted">
+            <h4 className="mb-3 text-xs font-semibold text-ink-muted">
               Connect
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -63,16 +63,7 @@ export default function Footer() {
                   <Mail className="h-4 w-4" /> kritrajnexera@gmail.com
                 </a>
               </li>
-              <li>
-                <a href="#" className="inline-flex items-center gap-2 text-ink hover:text-brand-400">
-                  <Linkedin className="h-4 w-4" /> LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="#" className="inline-flex items-center gap-2 text-ink hover:text-brand-400">
-                  <Github className="h-4 w-4" /> GitHub
-                </a>
-              </li>
+
             </ul>
           </motion.div>
         </motion.div>

@@ -33,7 +33,6 @@ export default function FeaturedWork() {
     <Section muted>
       <div className="mb-12 flex flex-wrap items-end justify-between gap-4">
         <div className="max-w-xl">
-          <p className="mb-3 text-sm font-medium text-brand-400">Featured work</p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
             Systems we&apos;ve shipped
           </h2>
@@ -57,7 +56,7 @@ export default function FeaturedWork() {
             className="group flex flex-col rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-brand-500/30"
           >
             <div className="mb-4 flex items-center justify-between">
-              <span className="rounded-md bg-white/5 px-2.5 py-1 text-xs font-medium text-ink-muted">
+              <span className="rounded-md bg-surface px-2.5 py-1 text-xs font-medium text-ink-muted">
                 {p.tag}
               </span>
               <ArrowUpRight className="h-4 w-4 text-ink-muted transition-colors group-hover:text-brand-400" />

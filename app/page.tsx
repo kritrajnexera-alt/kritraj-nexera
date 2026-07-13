@@ -7,7 +7,6 @@ import Testimonials from "@/components/home/Testimonials";
 import DemoPreview from "@/components/home/DemoPreview";
 import FeaturedWork from "@/components/home/FeaturedWork";
 import Process from "@/components/home/Process";
-import DiagnosticPreview from "@/components/home/DiagnosticPreview";
 import FinalCTA from "@/components/home/FinalCTA";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
       <SystemFlow />
       <BeforeAfter />
       <Testimonials />
-      <DiagnosticPreview />
       <DemoPreview />
       <FeaturedWork />
       <Process />

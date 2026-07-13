@@ -13,10 +13,7 @@ export default function DemoPage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-line py-20 sm:py-28">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-1/3 -top-1/3 h-[600px] w-[600px] rounded-full bg-brand-500/8 blur-[150px]" />
-          <div className="absolute -bottom-1/3 -right-1/3 h-[500px] w-[500px] rounded-full bg-brand-500/5 blur-[120px]" />
-        </div>
+        <div className="pointer-events-none absolute inset-0" />
         <Container>
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-brand-400/20 bg-brand-400/10 px-3 py-1 text-xs font-medium text-brand-400">

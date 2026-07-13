@@ -18,7 +18,6 @@ export default function ProcessTimeline() {
   return (
     <Section muted>
       <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">Our process</p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           How We Build Your Sales Engine
         </h2>

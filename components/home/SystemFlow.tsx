@@ -33,7 +33,6 @@ export default function SystemFlow() {
   return (
     <Section id="system" muted>
       <div className="mx-auto mb-14 max-w-2xl text-center">
-        <p className="mb-3 text-sm font-medium text-brand-400">How it works</p>
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           One system, start to sale
         </h2>
@@ -54,11 +53,11 @@ export default function SystemFlow() {
               className="h-full rounded-2xl border border-line bg-surface p-6"
             >
               <div className="mb-4 flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-500/15 text-brand-400">
+                <span className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-brand-500/15 text-brand-400">
                   <Icon className="h-5 w-5" />
-                </span>
-                <span className="text-xs font-medium text-ink-muted">
-                  Step {i + 1}
+                  <span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-brand-500 text-[9px] font-bold text-white">
+                    {i + 1}
+                  </span>
                 </span>
               </div>
               <h3 className="mb-2 font-semibold text-ink">{title}</h3>

@@ -60,7 +60,6 @@ export default function AboutPage() {
       <section className="border-b border-line py-20 sm:py-28">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-3 text-sm font-medium text-brand-400">About us</p>
             <h1 className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] text-ink">
               We Believe a Website Should Generate Business—Not Just Exist.
             </h1>
@@ -163,8 +162,7 @@ export default function AboutPage() {
       <Section>
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-          <p className="mb-3 text-sm font-medium text-brand-400">Our purpose</p>
-          <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
             Why We Exist
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-ink-muted">
@@ -231,12 +229,9 @@ export default function AboutPage() {
       <Section className="relative overflow-hidden text-center">
         <Reveal>
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="h-[400px] w-[400px] rounded-full bg-brand-500/10 blur-[120px]" />
+          <div className="h-[400px] w-[400px] rounded-full bg-brand-500/10" />
         </div>
         <div className="relative">
-          <p className="mb-3 text-sm font-medium text-brand-400">
-            Ready to Build a Sales Engine?
-          </p>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
             Ready to Build a Sales Engine?
           </h2>

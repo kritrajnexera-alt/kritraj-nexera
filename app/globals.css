@@ -1,46 +1,42 @@
 @import "tailwindcss";
 
-/*
- * KritRaj Nexera — design tokens
- * Brand-locked: blue ramp (deep → bright) + silver metallic accent + near-white base.
- * Identity-preservation wins (logo + brief commit these colors), so no generated palette.
- * All colors in OKLCH. Color strategy: Committed — brand blue carries strong surface weight.
- */
 @theme {
-  /* Brand blue ramp (sampled from logo + brief: #1E3A8A → #2563EB → #3B82F6) */
-  --color-brand-50: oklch(0.97 0.015 255);
-  --color-brand-100: oklch(0.94 0.03 256);
-  --color-brand-200: oklch(0.88 0.06 257);
-  --color-brand-300: oklch(0.82 0.1 257);
-  --color-brand-400: oklch(0.74 0.14 258);
-  --color-brand-500: oklch(0.61 0.19 259); /* ~#2563EB — primary */
-  --color-brand-600: oklch(0.54 0.2 260);
-  --color-brand-700: oklch(0.46 0.18 260); /* ~#1E3A8A anchor */
-  --color-brand-800: oklch(0.39 0.15 260);
-  --color-brand-900: oklch(0.32 0.12 261);
+  /* ██████  KREATIVROOM — DESIGN TOKENS  ██████ */
 
-  /* Silver / metallic accent (from logo shard, ~#C0C0C0) */
-  --color-silver-300: oklch(0.88 0.005 250);
-  --color-silver-400: oklch(0.82 0.006 250);
-  --color-silver-500: oklch(0.77 0.007 250); /* ~#C0C0C0 */
+  /* Brand / accent — single purple anchor (#796eff) */
+  --color-brand-50: #f0eeff;
+  --color-brand-100: #d9d5ff;
+  --color-brand-200: #b3abff;
+  --color-brand-300: #8d82ff;
+  --color-brand-400: #796eff; /* accent for text, links, icons */
+  --color-brand-500: #796eff; /* primary accent — CTAs, buttons */
+  --color-brand-600: #6450ff; /* hover for buttons */
+  --color-brand-700: #4f3ce0;
+  --color-brand-800: #3a28c2;
+  --color-brand-900: #2514a3;
 
-  /* Neutrals — near-black base tinted to brand hue (premium dark, not flat #000) */
-  --color-bg: oklch(0.13 0.015 261); /* deep near-black, blue-tinted */
-  --color-surface: oklch(0.17 0.018 261); /* slightly raised card surface */
-  --color-ink: oklch(0.96 0.01 261); /* near-white text */
-  --color-ink-muted: oklch(0.7 0.015 261); /* ≥4.5:1 on near-black bg */
-  --color-line: oklch(0.26 0.02 260); /* subtle dark hairline */
+  /* Core surfaces — light theme, cool palette */
+  --color-bg: #ffffff;
+  --color-surface: #f2f2f2;
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #4a4a4a;
+  --color-line: #e0e0e0;
+
+  /* Status */
+  --color-success: #28ca41;
+  --color-warning: #ffbd2e;
+  --color-danger: #ff5f57;
 
   /* Typography */
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
-  /* Motion — exponential ease-out, no bounce */
+  /* Motion */
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -55,13 +51,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Display headings: tight but not cramped (floor -0.04em) */
 h1, h2, h3 {
   letter-spacing: -0.025em;
   text-wrap: balance;
 }
 
-/* Reduced motion — non-optional. Every animation gets a still fallback. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

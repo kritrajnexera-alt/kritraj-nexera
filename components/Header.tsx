@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Container from "./Container";
 import Button from "./Button";
@@ -13,7 +14,6 @@ const nav = [
   { href: "/services", label: "Services" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/about", label: "About" },
-  { href: "/diagnostic", label: "Free Diagnostic" },
   { href: "/demo", label: "Live Demo" },
 ];
 
@@ -22,7 +22,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line/60 bg-bg/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-line bg-bg">
       <Container>
         <div className="flex h-16 items-center justify-between">
           <Logo />
@@ -35,13 +35,20 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`relative rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                     active
                       ? "text-brand-400"
                       : "text-ink-muted hover:text-ink"
                   }`}
                 >
                   {item.label}
+                  {active && (
+                    <motion.span
+                      layoutId="nav-active"
+                      className="absolute -bottom-0.5 left-3 right-3 h-0.5 rounded-full bg-brand-500"
+                      transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
+                    />
+                  )}
                 </Link>
               );
             })}
@@ -65,8 +72,15 @@ export default function Header() {
       </Container>
 
       {/* Mobile menu */}
-      {open && (
-        <nav className="border-t border-line bg-bg md:hidden">
+      <AnimatePresence>
+        {open && (
+          <motion.nav
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: [0.25, 1, 0.5, 1] }}
+            className="overflow-hidden border-t border-line bg-bg md:hidden"
+          >
           <Container>
             <div className="flex flex-col gap-1 py-4">
               {nav.map((item) => (
@@ -77,7 +91,7 @@ export default function Header() {
                   className={`rounded-lg px-3 py-2.5 text-sm font-medium ${
                     pathname === item.href
                       ? "bg-brand-500/10 text-brand-400"
-                      : "text-ink-muted hover:bg-white/5 hover:text-ink"
+                      : "text-ink-muted hover:bg-surface hover:text-ink"
                   }`}
                 >
                   {item.label}
@@ -88,8 +102,9 @@ export default function Header() {
               </Button>
             </div>
           </Container>
-        </nav>
-      )}
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
