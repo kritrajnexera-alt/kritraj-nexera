@@ -44,7 +44,9 @@ html {
 }
 
 body {
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+  background-image: radial-gradient(circle, rgba(121, 110, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
