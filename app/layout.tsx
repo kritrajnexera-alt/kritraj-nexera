@@ -62,10 +62,11 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
         <div
-          className="pointer-events-none fixed inset-0 z-0"
+          className="pointer-events-none fixed inset-0"
           style={{
-            backgroundImage: "radial-gradient(circle, rgba(121, 110, 255, 0.08) 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
+            zIndex: -1,
+            backgroundImage: "radial-gradient(circle, rgba(121, 110, 255, 0.15) 1.5px, transparent 1.5px)",
+            backgroundSize: "20px 20px",
           }}
           aria-hidden="true"
         />
