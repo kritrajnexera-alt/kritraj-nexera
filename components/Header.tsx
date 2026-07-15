@@ -15,6 +15,7 @@ const nav = [
   { href: "/portfolio", label: "Portfolio" },
   { href: "/about", label: "About" },
   { href: "/demo", label: "Live Demo" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
