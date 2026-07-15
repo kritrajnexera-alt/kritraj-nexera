@@ -1,7 +1,7 @@
 import { createPool } from "@vercel/postgres";
 
 function getPool() {
-  const url = process.env.DATABASE_URL;
+  const url = process.env.POSTGRES_URL ?? process.env.DATABASE_URL;
   if (!url) return null;
   return createPool({ connectionString: url });
 }
