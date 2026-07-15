@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollProgress from "@/components/ScrollProgress";
 import JsonLd from "@/components/JsonLd";
+import DotGrid from "@/components/DotGrid";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kritrajnexera.com";
@@ -61,15 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
-        <div
-          className="pointer-events-none fixed inset-0"
-          style={{
-            zIndex: -1,
-            backgroundImage: "radial-gradient(circle, rgba(121, 110, 255, 0.15) 1.5px, transparent 1.5px)",
-            backgroundSize: "20px 20px",
-          }}
-          aria-hidden="true"
-        />
+        <DotGrid />
         <JsonLd />
         <MotionConfig reducedMotion="user">
           <ScrollProgress />
