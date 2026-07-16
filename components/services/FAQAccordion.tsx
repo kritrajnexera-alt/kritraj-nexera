@@ -8,27 +8,27 @@ import Section from "@/components/Section";
 const faqs = [
   {
     q: "How long does a typical project take?",
-    a: "Most projects take 4–6 weeks from kickoff to launch. Discovery and strategy take about a week, development and design take 2–3 weeks, and automation integration plus testing takes the remaining time. Timelines depend on complexity — we'll give you a clear estimate during your strategy call.",
+    a: "Most projects take 4–6 weeks from kickoff to launch. Discovery and strategy take about a week, web design and Next.js development take 2–3 weeks, and workflow automation integration plus testing takes the remaining time. Timelines depend on complexity — we'll give you a clear estimate during your strategy call.",
   },
   {
     q: "Do I own the website and automation after launch?",
-    a: "100%. You own everything — the website code, the automation workflows, and all integrations. We transfer full access to you after launch. No lock-in, no recurring licensing fees.",
+    a: "100%. You own everything — the website code, the n8n automation workflows, and all integrations. We transfer full access to you after launch. No lock-in, no recurring licensing fees.",
   },
   {
     q: "Can you integrate my existing CRM or business tools?",
-    a: "We integrate with virtually any tool that has an API: Salesforce, HubSpot, Zoho, Google Sheets, Airtable, Calendly, Stripe, and many more. During the strategy phase, we map all your existing tools and design the automation around them.",
+    a: "We integrate with virtually any tool that has an API: Salesforce, HubSpot, Zoho, Google Sheets, Airtable, Calendly, Stripe, and many more. During the strategy phase, we map all your existing tools and design the CRM integration and workflow automation around them.",
   },
   {
     q: "Can you automate WhatsApp, Email, and lead follow-ups?",
-    a: "Yes — WhatsApp notifications, email sequences, and automated follow-ups are core features of every system. Leads trigger instant WhatsApp alerts to your team, and automated email sequences engage prospects who don't convert immediately.",
+    a: "Yes — WhatsApp automation, email sequences, and automated follow-ups are core features of every project. Enquiries trigger instant WhatsApp alerts to your team, and automated email sequences engage prospects who don't convert immediately.",
   },
   {
     q: "Do you provide ongoing support after launch?",
-    a: "Every project includes 30 days of post-launch support. After that, we offer a recurring care plan that covers updates, automation tweaks, performance monitoring, and priority support — so your system stays sharp as your business evolves.",
+    a: "Every project includes 30 days of post-launch support. After that, we offer a recurring care plan that covers updates, workflow tweaks, performance monitoring, and priority support — so your platform stays sharp as your business evolves.",
   },
   {
     q: "Can the system grow as my business grows?",
-    a: "Absolutely. We build on scalable infrastructure (Next.js + n8n + PostgreSQL). Adding new pages, automation flows, or integrations is straightforward. The Growth and Premium tiers include headroom for expansion, and we're always a call away when you're ready to scale.",
+    a: "Absolutely. We build on scalable infrastructure with Next.js development, n8n automation, and PostgreSQL. Adding new pages, workflow flows, or integrations is straightforward. The Growth and Premium tiers include headroom for expansion, and we're always a call away when you're ready to scale.",
   },
 ];
 

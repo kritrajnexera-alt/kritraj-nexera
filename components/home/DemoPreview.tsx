@@ -8,7 +8,7 @@ import Button from "@/components/Button";
 const easeOut = [0.25, 1, 0.5, 1] as const;
 
 const workflowSteps = [
-  "Lead Submitted",
+  "Enquiry Submitted",
   "Webhook Triggered",
   "CRM Updated",
   "Google Sheets Updated",
@@ -27,11 +27,11 @@ export default function DemoPreview() {
         className="mx-auto mb-12 max-w-2xl text-center"
       >
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-          See Our Sales Engine in Action
+          See Our AI Automation in Action
         </h2>
         <p className="mt-4 text-lg text-ink-muted">
-          Don&apos;t just read about automation — experience it live. Submit a
-          demo lead and watch how our system instantly captures, routes, and
+          Don&apos;t just read about workflow automation — experience it live. Submit a
+          demo enquiry and watch how our pipeline instantly captures, routes, and
           processes it.
         </p>
       </motion.div>
@@ -46,7 +46,7 @@ export default function DemoPreview() {
         <div className="mb-4 text-center">
           <p className="text-sm font-semibold text-ink">Automation Workflow</p>
           <p className="text-xs text-ink-muted">
-            What happens when a lead comes through
+            What happens when an enquiry comes through
           </p>
         </div>
         <div className="space-y-0">

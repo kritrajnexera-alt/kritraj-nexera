@@ -13,7 +13,7 @@ import FinalCTA from "@/components/home/FinalCTA";
 export const metadata: Metadata = {
   title: "KritRaj Nexera — We Build Sales Engines, Not Websites",
   description:
-    "KritRaj Nexera builds sales engines — websites wired to n8n automation that capture qualified leads, route them instantly, and convert more into closed sales.",
+    "KritRaj Nexera provides AI automation and website development services — modern sites wired to n8n that capture every enquiry, route it instantly, and convert more prospects into closed sales.",
   alternates: {
     canonical: "/",
   },

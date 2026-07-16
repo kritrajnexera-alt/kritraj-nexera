@@ -131,7 +131,7 @@ export default function DemoForm({ onSuccess, disabled = false }: DemoFormProps)
       <div className="mb-6">
         <h2 className="text-lg font-semibold text-ink">Submit a Sample Inquiry</h2>
         <p className="mt-1 text-sm text-ink-muted">
-          Fill this in as a real prospect would. Watch our AI-powered automation
+          Fill this in as a real prospect would. Watch our workflow automation
           pipeline process it live.
         </p>
       </div>

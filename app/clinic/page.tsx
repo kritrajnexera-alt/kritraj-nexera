@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Clinic Website + Automation | KritRaj Nexera",
   description:
-    "Patient intake and retention for clinics and dental practices. Online booking, automated reminders, and no-show reduction so your team focuses on patients.",
+    "AI automation for clinics and dental practices — online booking, automated reminders via WhatsApp, digital intake forms, and no-show reduction so your team focuses on patients.",
   alternates: {
     canonical: "/clinic",
   },
@@ -20,7 +20,7 @@ const painPoints = [
   "No-show rates eat into revenue every single day",
   "New patients wait days for a slot — and go elsewhere",
   "Manual follow-ups fall through the cracks",
-  "No system to track which marketing channels drive bookings",
+  "No visibility into which marketing channels drive bookings",
 ];
 
 const solutions = [
@@ -28,7 +28,7 @@ const solutions = [
   "Automated reminders via WhatsApp and email cut no-shows drastically",
   "Same-day booking slots — respond to enquiries in minutes, not days",
   "Automated intake forms reduce front desk paperwork",
-  "Performance dashboard shows exactly which campaigns drive patients",
+  "Dashboard shows exactly which campaigns drive new patients",
 ];
 
 const features = [
@@ -50,13 +50,13 @@ export default function ClinicPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-ink">
-                Eliminate No-Shows and Streamline Patient Intake
+                Stop No-Shows and Streamline Patient Intake
               </TypeInHeading>
               <p className="mx-auto mt-5 max-w-xl text-lg text-ink-muted">
                 Your front desk shouldn&apos;t spend half the day on the phone. We
-                build clinic websites with online booking, automated reminders,
-                and digital intake — so your team focuses on patients, not
-                paperwork, and fewer slots go empty.
+                build clinic websites with online booking, automated WhatsApp
+                reminders, and digital intake — so your team focuses on patients,
+                not paperwork, and fewer slots go empty.
               </p>
             </Reveal>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -95,7 +95,7 @@ export default function ClinicPage() {
       <Section>
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            A Patient Management System That Never Drops a Ball
+            Business Automation That Never Drops a Ball
           </h2>
         </div>
         <div className="mx-auto grid max-w-2xl gap-4">
@@ -114,7 +114,7 @@ export default function ClinicPage() {
       <Section muted>
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Everything a Clinic Needs to Run Smoothly
+            Everything Your Practice Needs to Run Smoothly
           </h2>
         </div>
         <div className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-2">
@@ -141,7 +141,7 @@ export default function ClinicPage() {
             </p>
             <p className="mt-3 text-sm text-ink-muted">
               A dental practice replaced phone-tag scheduling with online booking
-              and automated reminders — and filled more slots than ever.
+              and automated WhatsApp reminders — and filled more slots than ever.
             </p>
             <Button href="/contact" variant="secondary" className="mt-6">
               Book a discovery call
@@ -161,7 +161,8 @@ export default function ClinicPage() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink-muted">
             Let&apos;s review your current patient intake process and show you
-            exactly how automation can free up your team and grow your practice.
+            exactly how AI automation and workflow automation can free up your
+            team and grow your practice.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button href="/contact" className="group">

@@ -7,7 +7,7 @@ import DemoPageClient from "./DemoPageClient";
 export const metadata: Metadata = {
   title: "Live Demo",
   description:
-    "Experience a live sales engine in action. Submit a sample inquiry and watch our AI-powered automation pipeline capture, route, and process it in real time.",
+    "Experience AI automation and workflow automation live. Submit a sample inquiry and watch our n8n-powered pipeline capture, route, and process it in real time — demo sales automation in action.",
   alternates: {
     canonical: "/demo",
   },
@@ -30,11 +30,11 @@ export default function DemoPage() {
                 Live Demo
               </div>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-ink">
-                Experience Your Future Sales System
+                Experience AI Automation Live
               </TypeInHeading>
               <p className="mx-auto mt-5 max-w-xl text-lg text-ink-muted">
-                Submit a sample inquiry and watch your lead move through a
-                complete AI-powered automation workflow in real time.
+                Submit a sample inquiry and watch as it moves through a
+                complete workflow automation pipeline in real time.
               </p>
             </Reveal>
           </div>

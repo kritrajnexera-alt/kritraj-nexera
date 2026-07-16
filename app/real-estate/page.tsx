@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Real Estate Website + Automation | KritRaj Nexera",
   description:
-    "Lead response systems for real estate firms. Instant WhatsApp routing, automated follow-ups, and CRM sync so you never lose a hot buyer to a slow reply.",
+    "AI automation for real estate — WhatsApp automation, CRM integration, and lead generation workflows that route enquiries to agents in under 60 seconds and convert more buyers.",
   alternates: {
     canonical: "/real-estate",
   },
@@ -18,26 +18,26 @@ export const metadata: Metadata = {
 const painPoints = [
   "Enquiries pile up in a shared inbox nobody checks",
   "Buyers book with another agent while yours waits to reply",
-  "No system to tag leads by property interest or budget",
-  "Follow-ups are manual — most leads go cold",
-  "No visibility into which campaigns actually generate leads",
+  "No automation to tag prospects by property interest or budget",
+  "Follow-ups are manual — most enquiries go cold",
+  "No visibility into which campaigns actually generate tours",
 ];
 
 const solutions = [
   "Every enquiry reaches an agent within 60 seconds via WhatsApp",
-  "Leads are automatically tagged by property, budget, and source",
-  "Automated follow-up sequences nurture leads until they convert",
+  "Prospects are automatically tagged by property, budget, and source",
+  "Automated follow-up sequences nurture prospects until they convert",
   "CRM integration tracks every interaction from first touch to closing",
   "Performance dashboard shows exactly which campaigns drive tours",
 ];
 
 const features = [
   "Dynamic property listings with search and filters",
-  "Instant WhatsApp lead routing to the right agent",
+  "Instant WhatsApp enquiry routing to the right agent",
   "Automated tour booking and confirmation",
-  "CRM integration with lead scoring and pipeline tracking",
-  "Follow-up sequences for cold leads and past clients",
-  "Analytics dashboard — traffic, leads, and conversion by source",
+  "CRM integration with scoring and pipeline tracking",
+  "Follow-up sequences for cold prospects and past clients",
+  "Analytics dashboard — traffic, enquiries, and conversion by source",
 ];
 
 export default function RealEstatePage() {
@@ -50,13 +50,13 @@ export default function RealEstatePage() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-ink">
-                Stop Losing Property Leads to Slow Responses
+                Stop Losing Property Enquiries to Slow Responses
               </TypeInHeading>
               <p className="mx-auto mt-5 max-w-xl text-lg text-ink-muted">
                 Every minute you delay replying to an enquiry is a minute a
-                competitor gets ahead. We build websites wired to instant
-                WhatsApp routing, automated follow-ups, and CRM sync — so you
-                convert more leads into site visits and sales.
+                competitor gets ahead. We build websites wired to WhatsApp
+                automation, automated follow-ups, and CRM integration — so you
+                convert more prospects into site visits and sales.
               </p>
             </Reveal>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -95,7 +95,7 @@ export default function RealEstatePage() {
       <Section>
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            A Lead Response System That Works While You Sleep
+            Sales Automation That Works While You Sleep
           </h2>
         </div>
         <div className="mx-auto grid max-w-2xl gap-4">
@@ -114,7 +114,7 @@ export default function RealEstatePage() {
       <Section muted>
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Everything a Real Estate Business Needs
+            Everything a Real Estate Firm Needs
           </h2>
         </div>
         <div className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-2">
@@ -140,8 +140,8 @@ export default function RealEstatePage() {
               &ldquo;{`+62%`} booked site visits within the first quarter&rdquo;
             </p>
             <p className="mt-3 text-sm text-ink-muted">
-              A property firm went from slow email replies to instant WhatsApp
-              routing — and tours nearly doubled.
+              A property firm went from slow email replies to instant
+              WhatsApp automation — and tours nearly doubled.
             </p>
             <Button href="/contact" variant="secondary" className="mt-6">
               Book a discovery call
@@ -157,11 +157,11 @@ export default function RealEstatePage() {
         </div>
         <Reveal>
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Ready to Capture Every Property Lead?
+            Ready to Capture Every Property Enquiry?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-            Let&apos;s map your current lead flow and show you exactly how a
-            system would capture, route, and convert more enquiries into
+            Let&apos;s map your current enquiry flow and show you exactly how
+            AI automation would capture, route, and convert more prospects into
             site visits and sales.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

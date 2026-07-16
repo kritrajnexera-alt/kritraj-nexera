@@ -75,11 +75,11 @@ export default function SystemInMotion() {
       />
 
       <div className="flex flex-col items-stretch gap-0">
-        {/* Step 1 — Lead captured */}
+        {/* Step 1 — Enquiry captured */}
         <FlowCard delay={0.2} className="w-full">
           <div className="mb-2 flex items-center gap-2 text-xs font-medium text-ink-muted">
             <ClipboardList className="h-3.5 w-3.5 text-brand-500" />
-            New lead captured
+            New enquiry captured
           </div>
           <div className="space-y-1.5">
             <div className="h-2 w-3/4 rounded-full bg-black/5" />

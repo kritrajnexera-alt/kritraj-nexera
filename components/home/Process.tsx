@@ -10,17 +10,17 @@ const steps = [
   {
     icon: Search,
     title: "Understand your funnel",
-    desc: "We map how leads currently reach you — and where they slip through.",
+    desc: "We map how enquiries currently reach you — and where they slip through.",
   },
   {
     icon: Layers,
     title: "Design the system",
-    desc: "Site structure and automation flows, designed around one goal: more closed sales.",
+    desc: "Site structure and workflow automation flows, designed around one goal: more closed sales.",
   },
   {
     icon: Workflow,
     title: "Build & wire it together",
-    desc: "Website, workflows, and integrations built and connected into one pipeline.",
+    desc: "Web design, Next.js development, and n8n integrations built and connected into one pipeline.",
   },
   {
     icon: Rocket,
@@ -34,7 +34,7 @@ export default function Process() {
     <Section>
       <div className="mx-auto mb-14 max-w-2xl text-center">
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-          Four steps to a system that sells
+          Four steps to business automation that sells
         </h2>
       </div>
 

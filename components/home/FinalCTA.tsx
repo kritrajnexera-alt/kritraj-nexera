@@ -23,8 +23,8 @@ export default function FinalCTA() {
           See if this fits your business
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-          Tell us how leads reach you today. We&apos;ll show you exactly where a
-          system would capture, route, and convert them — no obligation.
+          Tell us how prospects reach you today. We&apos;ll show you exactly where
+          AI automation would capture, route, and convert them — no obligation.
         </p>
         <div className="mt-8 flex justify-center">
           <Button href="/contact" className="group">

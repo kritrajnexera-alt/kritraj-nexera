@@ -18,32 +18,32 @@ import Section from "@/components/Section";
 const easeOut = [0.25, 1, 0.5, 1] as const;
 
 const brochureFailures = [
-  "Leads land in an inbox nobody checks till evening",
-  "No follow-up — hot leads go cold by tomorrow",
+  "Enquiries land in an inbox nobody checks till evening",
+  "No follow-up — hot prospects go cold by tomorrow",
   "You can't tell which page actually drove the enquiry",
   "Site looks nice. Sales stay flat.",
 ];
 
 const systemWins = [
   { icon: Zap, label: "Instant WhatsApp & Email Alerts" },
-  { icon: Target, label: "Automatically assign every lead to the right team member" },
-  { icon: BarChart3, label: "Track every enquiry from first click to closed sale" },
+  { icon: Target, label: "Automatically assign every enquiry to the right team member" },
+  { icon: BarChart3, label: "Track every prospect from first click to closed sale" },
   { icon: RefreshCw, label: "Automated follow-ups so no opportunity is missed" },
 ];
 
 const workflowSteps = [
-  "Lead Submitted",
-  "Lead Validated",
+  "Enquiry Submitted",
+  "Enquiry Validated",
   "CRM Updated",
   "WhatsApp Notification Sent",
   "Email Notification Sent",
-  "Sales Team Assigned",
+  "Team Assigned",
   "Follow-up Started",
 ];
 
 const bottomCallouts = [
+  { icon: Bell, label: "Real-Time Enquiry Alerts" },
   { icon: Zap, label: "Automated Follow-ups" },
-  { icon: Bell, label: "Real-Time Lead Alerts" },
   { icon: BarChart3, label: "One Dashboard, Full Visibility" },
   { icon: TrendingUp, label: "Insights That Drive Decisions" },
 ];
@@ -55,7 +55,7 @@ export default function DifferenceSplit() {
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
           A brochure sits there.
           <br />
-          A system does the work.
+          A workflow does the work.
         </h2>
       </div>
 
@@ -101,8 +101,8 @@ export default function DifferenceSplit() {
           </ul>
 
           <p className="mt-6 border-t border-line pt-4 text-sm italic text-ink-muted">
-            A website is a brochure. It looks good but it doesn&apos;t do the
-            work.
+            A website alone is a brochure. It looks good but doesn&apos;t generate
+            business.
           </p>
         </motion.div>
 
@@ -124,7 +124,7 @@ export default function DifferenceSplit() {
               className="rounded-xl border border-brand-500/20 bg-surface p-4"
             >
               <div className="mb-2 flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
-                <Zap className="h-3.5 w-3.5" /> Lead Response
+                <Zap className="h-3.5 w-3.5" /> AI Chatbot
               </div>
               <p className="text-2xl font-semibold text-ink">&lt; 60 sec</p>
               <p className="mt-0.5 text-[10px] text-ink-muted">
@@ -210,7 +210,7 @@ export default function DifferenceSplit() {
           </ul>
 
           <p className="mt-6 border-t border-line pt-4 text-sm italic text-ink">
-            Your sales engine captures, routes, follows up, and tracks every lead
+            Your automation captures, routes, follows up, and tracks every prospect
             automatically — even while you sleep.
           </p>
         </motion.div>

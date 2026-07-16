@@ -20,7 +20,7 @@ const steps = [
   {
     icon: Workflow,
     title: "Automation",
-    desc: "The lead is instantly routed, tagged, and notified.",
+    desc: "The enquiry is instantly routed, tagged, and notified.",
   },
   {
     icon: Trophy,
@@ -34,11 +34,11 @@ export default function SystemFlow() {
     <Section id="system" muted>
       <div className="mx-auto mb-14 max-w-2xl text-center">
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-          One system, start to sale
+          AI Automation, from click to close
         </h2>
         <p className="mt-4 text-ink-muted">
-          Website and automation aren&apos;t two services bolted together.
-          They&apos;re one pipeline — the site captures, the system converts.
+          Website and workflow automation aren&apos;t two services bolted together.
+          They&apos;re one pipeline — the site captures, the automation converts.
         </p>
       </div>
 

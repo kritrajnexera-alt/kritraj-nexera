@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Tell us how leads reach you today. We'll show you exactly how a sales system would capture, route, and convert them. Free quote — no obligation, no pressure.",
+    "Tell us how prospects reach you today. We'll show you exactly how AI automation and workflow automation would capture, route, and convert them. Free quote — no obligation, no pressure.",
   alternates: {
     canonical: "/contact",
   },
@@ -23,12 +23,12 @@ export default function ContactPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] text-ink">
-                Let&apos;s build your system
+                Let&apos;s build your automation
               </TypeInHeading>
               <p className="mt-5 text-lg text-ink-muted">
-                Tell us a bit about your business. We&apos;ll get back with how a
-                site-plus-automation system would fit — and what it&apos;d be
-                worth to you.
+                Tell us a bit about your business. We&apos;ll get back with how
+                website development plus AI automation would fit — and what
+                it&apos;d be worth to you.
               </p>
             </Reveal>
           </div>
@@ -98,11 +98,11 @@ export default function ContactPage() {
                 <ul className="space-y-2.5 text-sm text-ink-muted">
                   <li className="flex items-start gap-2">
                     <Clock className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-400" />
-                    We review your current lead flow
+                    We review your current enquiry flow
                   </li>
                   <li className="flex items-start gap-2">
                     <Clock className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-400" />
-                    We map where a system would capture more
+                    We map where AI automation would capture more opportunities
                   </li>
                   <li className="flex items-start gap-2">
                     <Clock className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand-400" />
@@ -125,8 +125,8 @@ export default function ContactPage() {
                 Pick a time that works for you
               </h2>
               <p className="mt-4 text-ink-muted">
-                30-minute strategy call. No pitch — we map where a system would
-                capture more leads for your business.
+                30-minute strategy call. No pitch — we map where workflow automation
+                would capture more prospects for your business.
               </p>
             </Reveal>
           </div>

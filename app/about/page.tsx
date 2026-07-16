@@ -10,7 +10,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "KritRaj Nexera was founded on a simple frustration: businesses paid for beautiful websites that did nothing. We build the systems that actually grow them.",
+    "KritRaj Nexera provides business automation and AI automation agency services — modern websites with intelligent workflows that actually grow your business and capture more clients.",
   alternates: {
     canonical: "/about",
   },
@@ -20,35 +20,35 @@ const values = [
   {
     icon: TrendingUp,
     title: "Build for Business Growth",
-    desc: "Every decision we make is focused on improving lead generation, response speed, and customer conversion—not simply building attractive websites.",
+    desc: "Every decision we make is focused on improving lead generation, response speed, and customer conversion — not simply building attractive websites.",
   },
   {
     icon: Workflow,
     title: "Automation Comes First",
-    desc: "A website without automation is incomplete. Every system we build is designed to reduce manual work, improve efficiency, and create a better customer experience.",
+    desc: "A website without workflow automation is incomplete. Every platform we build is designed to reduce manual work, improve efficiency, and create a better customer experience.",
   },
   {
     icon: Code,
     title: "Built to Scale",
-    desc: "Our systems are designed to grow alongside your business with clean architecture, maintainable code, and flexible automation that adapts as your business evolves.",
+    desc: "Our solutions are designed to grow alongside your business with clean architecture, maintainable Next.js development, and flexible n8n automation that adapts as your business evolves.",
   },
 ];
 
 const trustCards = [
   {
     icon: Clock,
-    title: "Faster Lead Response",
-    desc: "Respond to enquiries in seconds instead of hours.",
+    title: "Faster Enquiry Response",
+    desc: "Respond to prospects in seconds instead of hours.",
   },
   {
     icon: Bot,
-    title: "Intelligent Automation",
-    desc: "Reduce repetitive work and streamline everyday operations.",
+    title: "AI Automation",
+    desc: "Reduce repetitive work and streamline everyday operations with intelligent workflows.",
   },
   {
     icon: BarChart3,
     title: "Built for Growth",
-    desc: "Scalable websites and automation designed for long-term business growth.",
+    desc: "Scalable web design and business automation designed for long-term growth.",
   },
   {
     icon: Handshake,
@@ -66,7 +66,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] text-ink">
-                We Believe a Website Should Generate Business—Not Just Exist.
+                We Believe a Website Should Generate Business — Not Just Exist.
               </TypeInHeading>
             </Reveal>
           </div>
@@ -84,18 +84,18 @@ export default function AboutPage() {
               delayed, and manual processes create friction at every step.
             </p>
             <p>
-              A website brings traffic. But without a system behind it, that
-              traffic rarely turns into revenue. The contact form submits to an
-              inbox nobody checks. The hot lead waits hours for a reply. The
-              opportunity quietly disappears.
+              A website brings traffic. But without workflow automation behind it,
+              that traffic rarely turns into revenue. The contact form submits to
+              an inbox nobody checks. The hot prospect waits hours for a reply.
+              The opportunity quietly disappears.
             </p>
             <p>
-              KritRaj Nexera was created to solve that problem. We combine modern
-              websites with intelligent automation — so every enquiry is captured,
-              routed, and followed up on automatically. We don&apos;t build
-              websites that sit there.{" "}
+              KritRaj Nexera was created to solve that problem. We combine
+              website development with AI automation — so every enquiry is
+              captured, routed, and followed up on automatically. We don&apos;t
+              build websites that sit there.{" "}
               <span className="font-medium text-ink">
-                We build growth systems that generate business.
+                We build AI-powered automation that generates business.
               </span>
             </p>
             </div>
@@ -137,27 +137,27 @@ export default function AboutPage() {
                 <p>
                   Rajnish founded KritRaj Nexera after recognising a common
                   problem across service businesses: companies invested in
-                  websites but still lost customers because there was no system
-                  behind the website.
+                  websites but still lost customers because there was no
+                  automation behind the website.
                 </p>
                 <p>
                   A website alone generates traffic. But enquiries, follow-ups,
-                  and lead management still depend on manual effort — and that
+                  and client management still depend on manual effort — and that
                   effort has limits. People get busy. Messages get missed.
                   Responses come too late.
                 </p>
                 <p>
                   KritRaj Nexera exists to solve that gap. We combine websites,
-                  automation, CRM integrations, and intelligent workflows into
-                  one complete growth system — so your business captures every
-                  opportunity, responds instantly, and never loses a lead to a
+                  AI automation, CRM integration, and intelligent workflows into
+                  one complete platform — so your business captures every
+                  opportunity, responds instantly, and never loses a prospect to a
                   slow reply.
                 </p>
                 <p className="border-l-2 border-brand-500 pl-4 italic text-ink">
                   &ldquo;A website shouldn&apos;t stop working when your office
                   closes. It should continue capturing opportunities, responding
-                  instantly, and supporting your business around the clock.
-                  That&apos;s the standard we build for.&rdquo;
+                  instantly through AI chatbots, and supporting your business
+                  around the clock. That&apos;s the standard we build for.&rdquo;
                 </p>
               </div>
             </Reveal>
@@ -179,8 +179,8 @@ export default function AboutPage() {
           <p className="mt-4 text-ink-muted">
             Most businesses invest in websites to attract customers but rely on
             manual processes to manage them. We built KritRaj Nexera to bridge
-            that gap by combining modern web development with intelligent
-            automation, helping businesses respond faster, work smarter, and
+            that gap by combining modern web design with AI automation,
+            helping businesses respond faster, work smarter, and
             grow with confidence.
           </p>
         </div>
@@ -241,11 +241,11 @@ export default function AboutPage() {
         </div>
         <div className="relative">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Ready to Build a Sales Engine?
+            Ready to Build Your AI Automation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-            Let&apos;s explore how a website powered by intelligent automation
-            can help your business capture more leads, respond faster, and
+            Let&apos;s explore how website development powered by n8n automation
+            can help your business capture more enquiries, respond faster, and
             convert more opportunities into customers.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">

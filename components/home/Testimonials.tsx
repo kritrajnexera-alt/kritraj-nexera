@@ -9,19 +9,19 @@ const easeOut = [0.25, 1, 0.5, 1] as const;
 const testimonials = [
   {
     quote:
-      "Within two weeks of launch, our response time dropped from hours to under a minute. We booked 15 consultations in the first month alone — leads we would've lost before.",
+      "Within two weeks of launch, our response time dropped from hours to under a minute. We booked 15 consultations in the first month alone — enquiries we would've lost before.",
     name: "Dr. Anil Mehta",
     role: "Founder, Smile Dental Clinic",
   },
   {
     quote:
-      "The system just runs. Every enquiry hits my phone instantly, and the follow-up happens without me lifting a finger. This is what every business needs.",
+      "The workflow just runs. Every enquiry hits my phone instantly, and the follow-up happens without me lifting a finger. This is what every business needs.",
     name: "Priya Sharma",
     role: "Director, Sharma Properties",
   },
   {
     quote:
-      "I didn't need another pretty website. I needed leads to stop disappearing. KritRaj Nexera built the system that stopped the leak — repeat orders up 38%.",
+      "I didn't need another pretty website. I needed enquiries to stop disappearing. KritRaj Nexera built the automation that stopped the leak — repeat orders up 38%.",
     name: "Rohit Verma",
     role: "Owner, Verma Retail",
   },
@@ -32,7 +32,7 @@ export default function Testimonials() {
     <Section muted>
       <div className="mx-auto mb-14 max-w-2xl text-center">
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-          Businesses that stopped losing leads
+          Businesses that stopped losing opportunities
         </h2>
       </div>
 

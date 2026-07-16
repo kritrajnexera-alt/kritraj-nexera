@@ -7,7 +7,7 @@ const easeOut = [0.25, 1, 0.5, 1] as const;
 
 const steps = [
   { num: "01", title: "Discovery Call" },
-  { num: "02", title: "System Strategy" },
+  { num: "02", title: "Automation Strategy" },
   { num: "03", title: "Website Development" },
   { num: "04", title: "Automation Integration" },
   { num: "05", title: "Testing & Quality Assurance" },
@@ -19,11 +19,11 @@ export default function ProcessTimeline() {
     <Section muted>
       <div className="mx-auto mb-14 max-w-2xl text-center">
         <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-          How We Build Your Sales Engine
+          How We Build Your AI Automation
         </h2>
         <p className="mt-4 text-ink-muted">
           A proven process that takes your business from idea to an automated
-          lead-generation system.
+          lead generation and sales platform.
         </p>
       </div>
 

@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Consultant Website + Automation | KritRaj Nexera",
   description:
-    "Lead intake systems for consultants, lawyers, and professional services. Automated enquiry capture, smart routing, and same-day scheduling so no lead goes cold.",
+    "AI automation for consultants, lawyers, and professional services. Automated enquiry capture, smart routing with CRM integration, and same-day scheduling so no prospect goes cold.",
   alternates: {
     canonical: "/consultant",
   },
@@ -17,17 +17,17 @@ export const metadata: Metadata = {
 
 const painPoints = [
   "Potential clients fill a form and wait days for a reply",
-  "No system to route enquiries by service type or urgency",
-  "Follow-ups are manual — leads go cold while you focus on billable work",
-  "No visibility into which channels actually drive qualified leads",
+  "No automation to route enquiries by service type or urgency",
+  "Follow-ups are manual — prospects go cold while you focus on billable work",
+  "No visibility into which channels actually drive qualified enquiries",
   "Your expertise sells itself, but a slow response loses the deal",
 ];
 
 const solutions = [
   "Every enquiry gets an instant response — day or night",
-  "Leads are automatically routed by service type, budget, or urgency",
-  "Automated follow-up sequences nurture leads until they book",
-  "CRM tracks every interaction from first touch to engagement",
+  "Enquiries are automatically routed by service type, budget, or urgency",
+  "Automated follow-up sequences nurture prospects until they book",
+  "CRM integration tracks every interaction from first touch to engagement",
   "Dashboard shows which campaigns, channels, and services perform best",
 ];
 
@@ -37,7 +37,7 @@ const features = [
   "Instant confirmation and follow-up automation",
   "CRM integration with pipeline tracking",
   "Automated appointment scheduling and reminders",
-  "Analytics — leads by service, source, and conversion rate",
+  "Analytics — enquiries by service, source, and conversion rate",
 ];
 
 export default function ConsultantPage() {
@@ -50,13 +50,13 @@ export default function ConsultantPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] tracking-tight text-ink">
-                Never Lose a Qualified Lead to a Slow Reply
+                Never Lose a Qualified Prospect to a Slow Reply
               </TypeInHeading>
               <p className="mx-auto mt-5 max-w-xl text-lg text-ink-muted">
                 Your expertise speaks for itself — but if prospects wait hours or
                 days for a response, they hire someone faster. We build consultant
-                websites with smart intake routing, instant follow-ups, and
-                automated scheduling so you capture every opportunity.
+                websites with smart intake routing, automated follow-ups, and
+                scheduling via workflow automation so you capture every opportunity.
               </p>
             </Reveal>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -95,7 +95,7 @@ export default function ConsultantPage() {
       <Section>
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            A Client Intake System That Works While You Advise
+            AI Automation That Works While You Advise
           </h2>
         </div>
         <div className="mx-auto grid max-w-2xl gap-4">
@@ -114,7 +114,7 @@ export default function ConsultantPage() {
       <Section muted>
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Everything a Consultant Needs to Win More Clients
+            Everything You Need to Win More Clients
           </h2>
         </div>
         <div className="mx-auto grid max-w-3xl gap-4 sm:grid-cols-2">
@@ -141,7 +141,7 @@ export default function ConsultantPage() {
             </p>
             <p className="mt-3 text-sm text-ink-muted">
               A law firm replaced their broken contact form with smart intake
-              routing and same-day scheduling — and went from lost leads to a
+              routing and same-day scheduling — and went from lost prospects to a
               full pipeline.
             </p>
             <Button href="/contact" variant="secondary" className="mt-6">
@@ -162,8 +162,8 @@ export default function ConsultantPage() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink-muted">
             Let&apos;s review your current intake process and show you exactly
-            how automation can help you respond faster, nurture better, and
-            close more clients.
+            how AI automation and CRM integration can help you respond faster,
+            nurture better, and close more clients.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Button href="/contact" className="group">

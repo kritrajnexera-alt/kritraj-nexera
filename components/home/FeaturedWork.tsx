@@ -10,9 +10,9 @@ const easeOut = [0.25, 1, 0.5, 1] as const;
 const projects = [
   {
     tag: "Real Estate",
-    title: "Lead-to-tour automation for a property firm",
+    title: "Enquiry-to-tour automation for a property firm",
     result: "+62% booked site visits",
-    desc: "Dynamic listings site wired to instant WhatsApp routing — every enquiry reached an agent in under a minute.",
+    desc: "Dynamic listings site wired to WhatsApp automation — every enquiry reached an agent in under a minute.",
   },
   {
     tag: "Clinic",
@@ -22,9 +22,9 @@ const projects = [
   },
   {
     tag: "E-commerce",
-    title: "Catalog + order routing for a retailer",
+    title: "Catalog + sales automation for a retailer",
     result: "+38% repeat orders",
-    desc: "Filterable product site feeding orders into inventory, dispatch, and customer win-back flows.",
+    desc: "Filterable product site feeding orders into inventory, dispatch, and customer win-back flows with CRM integration.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function FeaturedWork() {
       <div className="mb-12 flex flex-wrap items-end justify-between gap-4">
         <div className="max-w-xl">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Systems we&apos;ve shipped
+            Workflows we&apos;ve shipped
           </h2>
         </div>
         <Link

@@ -66,7 +66,7 @@ export default function HeroCopy() {
         transition={{ duration: 0.5, ease: easeOut }}
         className="mb-5 text-sm font-medium text-brand-600"
       >
-        Growth systems for service businesses
+        AI automation agency for service businesses
       </motion.p>
 
       <motion.h1
@@ -88,7 +88,7 @@ export default function HeroCopy() {
         transition={{ duration: 0.6, ease: easeOut, delay: 0.2 }}
         className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted"
       >
-        A website that captures qualified leads, wired to automation that routes,
+        A website that captures qualified enquiries, wired to n8n automation that routes,
         notifies, and follows up — so prospects get a response in seconds, not
         days, and more of them turn into closed sales.
       </motion.p>
@@ -120,7 +120,7 @@ export default function HeroCopy() {
       >
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
-          Lead response under 60 seconds
+          Enquiry response under 60 seconds
         </span>
         <span className="hidden h-4 w-px bg-line sm:block" />
         <span className="hidden sm:flex items-center gap-2">

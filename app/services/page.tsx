@@ -12,7 +12,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Every system combines a high-performance website with intelligent automation to capture leads, eliminate manual work, and help your team close more business.",
+    "AI automation agency offering website development with n8n, CRM integration, WhatsApp automation, and lead generation — everything you need to capture enquiries and close more sales.",
   alternates: {
     canonical: "/services",
   },
@@ -28,9 +28,9 @@ type Tier = {
 
 const tiers: Tier[] = [
   {
-    name: "Starter System",
+    name: "Starter Automation",
     tagline:
-      "Launch with a website that works for your business—not just your brand. Perfect for businesses taking their first step online. Capture every enquiry and receive instant WhatsApp and email notifications so you never miss a potential customer.",
+      "Launch with a website that works for your business — not just your brand. Perfect for businesses taking their first step online. Capture every enquiry and receive instant WhatsApp and email notifications so you never miss a potential customer.",
     bestFor:
       "Startups, freelancers, local businesses, and service providers receiving up to 30 enquiries per month.",
     features: [
@@ -43,11 +43,11 @@ const tiers: Tier[] = [
     ],
   },
   {
-    name: "Growth System",
+    name: "Growth Automation",
     tagline:
-      "Turn every enquiry into a structured sales process. This system automatically captures, routes, tracks, and follows up with leads while keeping your CRM and team perfectly in sync.",
+      "Turn every enquiry into a structured sales process. This platform automatically captures, routes, tracks, and follows up with prospects while keeping your CRM and team perfectly in sync.",
     bestFor:
-      "Growing businesses that need faster response times, CRM integration, and automated lead management.",
+      "Growing businesses that need faster response times, CRM integration, and automated enquiry management.",
     popular: true,
     features: [
       "Dynamic site: filterable listings, booking, or catalog",
@@ -59,18 +59,18 @@ const tiers: Tier[] = [
     ],
   },
   {
-    name: "Premium System",
+    name: "Premium Automation",
     tagline:
-      "Build a complete growth engine that scales with your business. From lead capture and customer communication to payments, reporting, and internal operations, everything works together through intelligent automation.",
+      "Build a complete growth engine that scales with your business. From enquiry capture and customer communication to payments, reporting, and internal operations, everything works together through AI automation.",
     bestFor:
       "Established businesses ready to automate sales, operations, and customer management across multiple teams.",
     features: [
       "Full CMS-managed site your team can update",
-      "End-to-end interconnected automation (custom API + database)",
+      "End-to-end workflow automation (custom API + database)",
       "Payment gateway integration",
       "Multi-user roles and permissions",
       "Error monitoring and alerting",
-      "Team training on the entire system",
+      "Team training on the entire platform",
     ],
   },
 ];
@@ -78,7 +78,7 @@ const tiers: Tier[] = [
 const includedItems = [
   { icon: Monitor, label: "Mobile Responsive Design" },
   { icon: Zap, label: "Performance Optimisation" },
-  { icon: Search, label: "Basic SEO Setup" },
+  { icon: Search, label: "SEO & Lead Generation Setup" },
   { icon: Shield, label: "SSL & Security" },
   { icon: BarChart3, label: "Analytics & Conversion Tracking" },
   { icon: Globe, label: "Deployment on Your Domain" },
@@ -100,12 +100,12 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <TypeInHeading className="text-[clamp(2.25rem,5vw,3.5rem)] font-semibold leading-[1.1] text-ink">
-                Choose the Right Sales Engine for Your Business
+                Choose the Right AI Automation for Your Business
               </TypeInHeading>
               <p className="mt-5 text-lg text-ink-muted">
-                Every business loses leads differently. Some respond too late.
-                Others rely on manual follow-ups. We build websites powered by
-                intelligent automation that capture every enquiry, respond instantly,
+                Every business loses opportunities differently. Some respond too late.
+                Others rely on manual follow-ups. We build websites with
+                workflow automation that capture every enquiry, respond instantly,
                 and help your team close more business.
               </p>
               <p className="mt-4 text-sm text-ink-muted">
@@ -123,7 +123,7 @@ export default function ServicesPage() {
           <div className="mx-auto mb-10 max-w-2xl text-center">
             <Reveal>
               <h2 className="text-[clamp(1.5rem,3vw,2rem)] font-semibold leading-tight text-ink">
-                See a System Built for Your Industry
+                See AI Automation Built for Your Industry
               </h2>
             </Reveal>
           </div>
@@ -220,8 +220,8 @@ export default function ServicesPage() {
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-muted">
               Your business keeps evolving, and your automation should evolve
               with it. We continuously improve workflows, monitor performance,
-              resolve issues, and introduce new automations to keep your sales
-              engine performing at its best.
+              resolve issues, and introduce new automations to keep your
+              platform performing at its best.
             </p>
             <Button href="/contact" variant="secondary" className="mt-6">
               Ask about ongoing support
@@ -231,11 +231,11 @@ export default function ServicesPage() {
         </Container>
       </section>
 
-      {/* Every System Comes Ready for Growth */}
+      {/* Every Automation Comes Ready for Growth */}
       <Section muted>
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-            Every System Comes Ready for Growth
+            Every Project Comes Ready for Growth
           </h2>
           <p className="mt-4 text-ink-muted">
             Every project follows the same high standards for performance,
@@ -265,7 +265,7 @@ export default function ServicesPage() {
             Built With Modern Technologies
           </h2>
           <p className="mt-4 text-ink-muted">
-            Reliable tools that power fast, scalable, and automation-ready systems.
+            Reliable tools that power fast, scalable, and automation-ready platforms.
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-3">
@@ -290,12 +290,12 @@ export default function ServicesPage() {
         <Reveal>
           <div className="relative">
             <h2 className="text-[clamp(2rem,4vw,3rem)] font-semibold leading-tight text-ink">
-              Ready to Build a Sales Engine?
+              Ready to Build Your AI Automation?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-              Let&apos;s map your current sales process and show you exactly how a
-              website powered by intelligent automation can help you capture more
-              leads, respond faster, and grow with confidence.
+              Let&apos;s map your current sales process and show you exactly how
+              n8n automation and web design can help you capture more
+              enquiries, respond faster, and grow with confidence.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Button href="/contact" className="group">

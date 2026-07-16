@@ -157,7 +157,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={4}
-          placeholder="Tell us how leads reach you today, and what you'd want the system to do."
+          placeholder="Tell us how prospects reach you today, and what you'd want the automation to do."
           onBlur={() => markTouched("message")}
           className={`w-full resize-none rounded-xl border bg-bg px-4 py-3 text-sm text-ink transition-colors placeholder:text-ink-muted/80 focus:border-brand-400 focus:outline-none focus:ring-1 focus:ring-brand-400 ${
             touched.has("message") && fieldErrors.message ? "border-red-400/50" : "border-line"
