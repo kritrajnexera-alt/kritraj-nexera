@@ -12,7 +12,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "AI automation agency offering website development with n8n, CRM integration, WhatsApp automation, and lead generation — everything you need to capture enquiries and close more sales.",
+    "AI automation agency with website development, n8n, CRM integration, WhatsApp automation, and lead generation — capture enquiries and close more sales.",
   alternates: {
     canonical: "/services",
   },

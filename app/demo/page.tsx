@@ -7,7 +7,7 @@ import DemoPageClient from "./DemoPageClient";
 export const metadata: Metadata = {
   title: "Live Demo",
   description:
-    "Experience AI automation and workflow automation live. Submit a sample inquiry and watch our n8n-powered pipeline capture, route, and process it in real time — demo sales automation in action.",
+    "Experience AI and workflow automation live. Submit a sample inquiry and watch our n8n pipeline capture, route, and process it — sales automation in action.",
   alternates: {
     canonical: "/demo",
   },

@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Consultant Website + Automation | KritRaj Nexera",
   description:
-    "AI automation for consultants, lawyers, and professional services. Automated enquiry capture, smart routing with CRM integration, and same-day scheduling so no prospect goes cold.",
+    "AI automation for consultants and lawyers — enquiry capture, CRM integration, and same-day scheduling so no prospect goes cold.",
   alternates: {
     canonical: "/consultant",
   },

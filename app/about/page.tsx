@@ -10,7 +10,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "KritRaj Nexera provides business automation and AI automation agency services — modern websites with intelligent workflows that actually grow your business and capture more clients.",
+    "Business automation and AI automation agency — modern websites with intelligent workflows that grow your business and capture more clients.",
   alternates: {
     canonical: "/about",
   },

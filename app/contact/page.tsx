@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Tell us how prospects reach you today. We'll show you exactly how AI automation and workflow automation would capture, route, and convert them. Free quote — no obligation, no pressure.",
+    "Tell us how prospects reach you. We'll show how AI and workflow automation would capture, route, and convert them. Free quote — no obligation.",
   alternates: {
     canonical: "/contact",
   },

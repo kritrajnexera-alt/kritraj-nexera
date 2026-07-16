@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Clinic Website + Automation | KritRaj Nexera",
   description:
-    "AI automation for clinics and dental practices — online booking, automated reminders via WhatsApp, digital intake forms, and no-show reduction so your team focuses on patients.",
+    "AI automation for clinics and dental — online booking, WhatsApp reminders, digital intake, and no-show reduction so your team focuses on patients.",
   alternates: {
     canonical: "/clinic",
   },

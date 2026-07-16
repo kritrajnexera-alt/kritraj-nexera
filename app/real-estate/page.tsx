@@ -9,7 +9,7 @@ import TypeInHeading from "@/components/TypeInHeading";
 export const metadata: Metadata = {
   title: "Real Estate Website + Automation | KritRaj Nexera",
   description:
-    "AI automation for real estate — WhatsApp automation, CRM integration, and lead generation workflows that route enquiries to agents in under 60 seconds and convert more buyers.",
+    "AI automation for real estate — WhatsApp alerts, CRM integration, and lead generation that routes enquiries to agents in seconds and converts more buyers.",
   alternates: {
     canonical: "/real-estate",
   },
