@@ -1,7 +1,6 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -10,19 +9,32 @@ type Props = {
 };
 
 export default function ParallaxSection({ children, speed = 0.5, className }: Props) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
+  const innerRef = useRef<HTMLDivElement>(null);
 
-  const y = useTransform(scrollYProgress, [0, 1], [speed * 150, speed * -150]);
+  useEffect(() => {
+    const el = innerRef.current;
+    if (!el) return;
+
+    const parent = el.parentElement;
+    if (!parent) return;
+    const viewportH = window.innerHeight;
+    let raf: number;
+
+    function update() {
+      const rect = parent!.getBoundingClientRect();
+      const center = (rect.top + rect.bottom) / 2;
+      const offset = (center - viewportH / 2) / viewportH;
+      el!.style.transform = `translateY(${offset * speed * 200}px)`;
+      raf = requestAnimationFrame(update);
+    }
+
+    raf = requestAnimationFrame(update);
+    return () => cancelAnimationFrame(raf);
+  }, [speed]);
 
   return (
-    <div ref={ref} className={className}>
-      <motion.div style={{ y }}>
-        {children}
-      </motion.div>
+    <div className={`overflow-hidden ${className ?? ""}`}>
+      <div ref={innerRef}>{children}</div>
     </div>
   );
 }
