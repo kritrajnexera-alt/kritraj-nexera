@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Search, Layers, Workflow, Rocket } from "lucide-react";
 import Section from "@/components/Section";
+import ParallaxSection from "@/components/ParallaxSection";
 
 const easeOut = [0.25, 1, 0.5, 1] as const;
 
@@ -38,6 +39,7 @@ export default function Process() {
         </h2>
       </div>
 
+      <ParallaxSection speed={0.5}>
       <div className="relative grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {steps.map(({ icon: Icon, title, desc }, i) => (
           <motion.div
@@ -59,6 +61,7 @@ export default function Process() {
           </motion.div>
         ))}
       </div>
+      </ParallaxSection>
     </Section>
   );
 }

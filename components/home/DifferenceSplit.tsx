@@ -14,6 +14,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 import Section from "@/components/Section";
+import ParallaxSection from "@/components/ParallaxSection";
 
 const easeOut = [0.25, 1, 0.5, 1] as const;
 
@@ -58,6 +59,7 @@ export default function DifferenceSplit() {
       </div>
 
       {/* Split comparison */}
+      <ParallaxSection speed={0.4}>
       <div className="grid items-stretch gap-0 overflow-hidden rounded-3xl border border-line lg:grid-cols-2">
         {/* LEFT — Other agencies / brochure site */}
         <motion.div
@@ -214,6 +216,7 @@ export default function DifferenceSplit() {
           </p>
         </motion.div>
       </div>
+      </ParallaxSection>
 
       {/* Bottom callouts */}
       <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">

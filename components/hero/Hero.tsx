@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import HeroCopy from "./HeroCopy";
 import SystemInMotion from "./SystemInMotion";
+import ParallaxSection from "@/components/ParallaxSection";
 
 /**
  * Hero section — asymmetric 6/6 grid on desktop.
@@ -12,10 +13,12 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden py-20 sm:py-28">
       <Container>
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <HeroCopy />
-          <SystemInMotion />
-        </div>
+        <ParallaxSection speed={0.3}>
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <HeroCopy />
+            <SystemInMotion />
+          </div>
+        </ParallaxSection>
       </Container>
     </section>
   );
