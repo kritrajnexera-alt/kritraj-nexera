@@ -62,6 +62,11 @@ export default function Footer() {
                   <Mail className="h-4 w-4" /> kritrajnexera@gmail.com
                 </a>
               </li>
+              <li>
+                <a href="https://www.instagram.com/kritraj.nexera/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#faf3e0]/80 hover:text-[#faf3e0]">
+                  Instagram ↗
+                </a>
+              </li>
 
             </ul>
           </motion.div>
