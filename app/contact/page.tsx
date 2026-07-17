@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Mail, Calendar, Clock, Zap } from "lucide-react";
 import Container from "@/components/Container";
-import CalEmbed from "@/components/CalEmbed";
-import ContactForm from "./ContactForm";
 import Reveal from "@/components/Reveal";
 import TypeInHeading from "@/components/TypeInHeading";
+
+const CalEmbed = dynamic(() => import("@/components/CalEmbed"));
+const ContactForm = dynamic(() => import("./ContactForm"));
 
 export const metadata: Metadata = {
   title: "Contact",

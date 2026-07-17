@@ -8,9 +8,9 @@
   --color-brand-100: #d9d5ff;
   --color-brand-200: #b3abff;
   --color-brand-300: #8d82ff;
-  --color-brand-400: #796eff; /* accent for text, links, icons */
-  --color-brand-500: #796eff; /* primary accent — CTAs, buttons */
-  --color-brand-600: #6450ff; /* hover for buttons */
+  --color-brand-400: #6655ff; /* accent for text, links, icons (WCAG AA with white) */
+  --color-brand-500: #6450ff; /* primary accent — CTAs, buttons (WCAG AA with white) */
+  --color-brand-600: #4f3ce0; /* hover for buttons */
   --color-brand-700: #4f3ce0;
   --color-brand-800: #3a28c2;
   --color-brand-900: #2514a3;

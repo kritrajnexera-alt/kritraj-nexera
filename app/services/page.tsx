@@ -1,13 +1,15 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Check, Star, ArrowRight, Monitor, Zap, Search, Shield, BarChart3, Globe, BookOpen, Headphones, Building2, Stethoscope, Briefcase } from "lucide-react";
 import type { Metadata } from "next";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
-import ProcessTimeline from "@/components/services/ProcessTimeline";
-import FAQAccordion from "@/components/services/FAQAccordion";
 import Reveal from "@/components/Reveal";
 import TypeInHeading from "@/components/TypeInHeading";
+
+const ProcessTimeline = dynamic(() => import("@/components/services/ProcessTimeline"));
+const FAQAccordion = dynamic(() => import("@/components/services/FAQAccordion"));
 
 export const metadata: Metadata = {
   title: "Services",

@@ -211,7 +211,8 @@ export default function DifferenceSplit() {
 
           <p className="mt-6 border-t border-line pt-4 text-sm italic text-ink">
             Your automation captures, routes, follows up, and tracks every prospect
-            automatically — even while you sleep.
+            automatically — even while you sleep. You own everything, and we
+            include 30 days of post-launch support.
           </p>
         </motion.div>
       </div>

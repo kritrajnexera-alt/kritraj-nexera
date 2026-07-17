@@ -39,6 +39,7 @@ export default function SystemFlow() {
         <p className="mt-4 text-ink-muted">
           Website and workflow automation aren&apos;t two services bolted together.
           They&apos;re one pipeline — the site captures, the automation converts.
+          Delivered in 4–6 weeks. You own everything. No lock-in.
         </p>
       </div>
 

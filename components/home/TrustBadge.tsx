@@ -21,7 +21,7 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: 50, suffix: "+", label: "Systems Shipped" },
+  { value: 50, suffix: "+", label: "Automations Delivered" },
   { value: 200, suffix: "+", label: "Enquiries Captured Monthly" },
   { value: 60, prefix: "<", suffix: "s", label: "Average Response Time" },
   { value: 99.9, suffix: "%", decimals: 1, label: "Uptime Guaranteed" },

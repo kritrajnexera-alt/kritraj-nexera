@@ -20,11 +20,12 @@ export default function FinalCTA() {
           className="absolute left-1/2 top-0 -z-10 h-64 w-64 -translate-x-1/2 rounded-full bg-brand-500/20"
         />
         <h2 className="mx-auto max-w-2xl text-[clamp(1.75rem,4vw,2.75rem)] font-semibold leading-tight text-ink">
-          See if this fits your business
+          Not sure if this is right for you?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-          Tell us how prospects reach you today. We&apos;ll show you exactly where
-          AI automation would capture, route, and convert them — no obligation.
+          No pressure. No pitch. We&apos;ll review how enquiries reach you, map
+          where automation would help, and give you a clear quote. If it&apos;s
+          not a fit, we&apos;ll tell you.
         </p>
         <div className="mt-8 flex justify-center">
           <Button href="/contact" className="group">

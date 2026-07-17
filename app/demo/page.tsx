@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Container from "@/components/Container";
 import Reveal from "@/components/Reveal";
 import TypeInHeading from "@/components/TypeInHeading";
-import DemoPageClient from "./DemoPageClient";
+
+const DemoPageClient = dynamic(() => import("./DemoPageClient"));
 
 export const metadata: Metadata = {
   title: "Live Demo",

@@ -25,7 +25,7 @@ const steps = [
   {
     icon: Rocket,
     title: "Launch & refine",
-    desc: "We go live, monitor what converts, and tune the system to perform better over time.",
+    desc: "We go live, monitor what converts, and tune the system to perform better. Includes 30 days of hands-on post-launch support.",
   },
 ];
 
