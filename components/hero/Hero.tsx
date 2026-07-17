@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden py-20 sm:py-28">
       <Container>
-        <ParallaxSection speed={0.3}>
+        <ParallaxSection speed={0.6}>
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <HeroCopy />
             <SystemInMotion />

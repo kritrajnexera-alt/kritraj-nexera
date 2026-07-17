@@ -39,7 +39,7 @@ export default function Process() {
         </h2>
       </div>
 
-      <ParallaxSection speed={0.5}>
+      <ParallaxSection speed={1}>
       <div className="relative grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {steps.map(({ icon: Icon, title, desc }, i) => (
           <motion.div

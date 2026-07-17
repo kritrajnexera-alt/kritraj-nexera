@@ -59,7 +59,7 @@ export default function DifferenceSplit() {
       </div>
 
       {/* Split comparison */}
-      <ParallaxSection speed={0.4}>
+      <ParallaxSection speed={0.8}>
       <div className="grid items-stretch gap-0 overflow-hidden rounded-3xl border border-line lg:grid-cols-2">
         {/* LEFT — Other agencies / brochure site */}
         <motion.div

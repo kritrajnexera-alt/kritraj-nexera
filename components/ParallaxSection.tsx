@@ -16,7 +16,7 @@ export default function ParallaxSection({ children, speed = 0.5, className }: Pr
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [speed * 100, speed * -100]);
+  const y = useTransform(scrollYProgress, [0, 1], [speed * 150, speed * -150]);
 
   return (
     <div ref={ref} className={className}>
