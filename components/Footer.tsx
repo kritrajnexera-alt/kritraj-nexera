@@ -33,9 +33,8 @@ export default function Footer() {
           <motion.div variants={item}>
             <Logo light />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-[#faf3e0]/60">
-              We don&apos;t build websites. We build sales engines — sites wired
-              to automation that captures, routes, and converts leads while you
-              sleep.
+              We don&apos;t build websites. We build sales engines — automation that
+              catches, qualifies, and closes leads while you sleep.
             </p>
           </motion.div>
 

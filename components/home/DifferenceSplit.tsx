@@ -20,7 +20,7 @@ const easeOut = [0.25, 1, 0.5, 1] as const;
 const brochureFailures = [
   "Enquiries land in an inbox nobody checks till evening",
   "No follow-up — hot prospects go cold by tomorrow",
-  "You can't tell which page actually drove the enquiry",
+  "You're the one chasing the lead, not the system.",
   "Site looks nice. Sales stay flat.",
 ];
 
@@ -32,12 +32,10 @@ const systemWins = [
 ];
 
 const workflowSteps = [
-  "Enquiry Submitted",
-  "Enquiry Validated",
-  "CRM Updated",
-  "WhatsApp Notification Sent",
-  "Email Notification Sent",
-  "Team Assigned",
+  "Enquiry Captured",
+  "Validated & Logged to CRM",
+  "Team Notified (WhatsApp + Email)",
+  "Assigned",
   "Follow-up Started",
 ];
 

@@ -40,8 +40,7 @@ export default function WhatsAppButton() {
             <X className="h-3 w-3" />
           </button>
           <p className="text-sm text-ink">
-            Got a question?{" "}
-            <span className="text-brand-400">Chat with us on WhatsApp →</span>
+            <span className="text-brand-400">Questions? We reply in minutes →</span>
           </p>
         </div>
       )}

@@ -23,9 +23,9 @@ export default function FinalCTA() {
           Not sure if this is right for you?
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-ink-muted">
-          No pressure. No pitch. We&apos;ll review how enquiries reach you, map
-          where automation would help, and give you a clear quote. If it&apos;s
-          not a fit, we&apos;ll tell you.
+          No pressure, no pitch — just a look at how enquiries reach you, where
+          automation helps, and a clear quote. If it&apos;s not a fit, we&apos;ll
+          say so.
         </p>
         <div className="mt-8 flex justify-center">
           <Button href="/contact" className="group">
