@@ -70,7 +70,7 @@ export default function DifferenceSplit() {
           className="relative border-b border-line p-8 lg:border-b-0 lg:border-r"
         >
           {/* Desaturated mock browser */}
-          <div className="mb-6 rounded-xl border border-line bg-surface p-1 opacity-60">
+          <div className="mb-6 rounded-xl glass-card p-1 opacity-60">
             <div className="flex gap-1.5 px-2 py-1.5">
               <span className="h-2 w-2 rounded-full bg-line" />
               <span className="h-2 w-2 rounded-full bg-line" />
@@ -94,7 +94,7 @@ export default function DifferenceSplit() {
           <ul className="space-y-3">
             {brochureFailures.map((f) => (
               <li key={f} className="flex items-start gap-2.5 text-sm text-ink-muted">
-                <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-red-600" />
+                <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-rose-500" />
                 {f}
               </li>
             ))}
@@ -121,7 +121,7 @@ export default function DifferenceSplit() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, ease: easeOut, delay: 0.1 }}
-              className="rounded-xl border border-brand-500/20 bg-surface p-4"
+              className="rounded-xl glass-card p-4"
             >
               <div className="mb-2 flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
                 <Zap className="h-3.5 w-3.5" /> AI Chatbot
@@ -136,7 +136,7 @@ export default function DifferenceSplit() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, ease: easeOut, delay: 0.15 }}
-              className="rounded-xl border border-brand-500/20 bg-surface p-4"
+              className="rounded-xl glass-card p-4"
             >
               <div className="mb-2 flex items-center gap-1.5 text-[11px] font-medium text-brand-400">
                 <Bot className="h-3.5 w-3.5" /> Automation Status
@@ -152,7 +152,7 @@ export default function DifferenceSplit() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, ease: easeOut, delay: 0.2 }}
-            className="mb-6 rounded-xl border border-line bg-surface p-4"
+            className="mb-6 rounded-xl glass-card p-4"
           >
             <div className="mb-3 flex items-center gap-2 text-[11px] font-medium text-brand-400">
               <Bot className="h-3.5 w-3.5" /> Live Sales Engine
@@ -174,9 +174,9 @@ export default function DifferenceSplit() {
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.25, ease: easeOut, delay: 0.25 + i * 0.08 }}
-                      className="relative z-10 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-600/20"
+                      className="relative z-10 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal-500/20"
                     >
-                      <CheckCircle2 className="h-3.5 w-3.5 text-green-600" />
+                      <CheckCircle2 className="h-3.5 w-3.5 text-teal-500" />
                     </motion.div>
                     <motion.span
                       initial={{ opacity: 0, x: -4 }}
@@ -227,7 +227,7 @@ export default function DifferenceSplit() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, ease: easeOut, delay: i * 0.08 }}
-            className="flex flex-col items-center gap-2 rounded-2xl border border-line bg-surface/50 p-5 text-center"
+            className="flex flex-col items-center gap-2 rounded-2xl glass-card p-5 text-center"
           >
             <Icon className="h-5 w-5 text-brand-400" />
             <span className="text-sm font-medium text-ink">{label}</span>

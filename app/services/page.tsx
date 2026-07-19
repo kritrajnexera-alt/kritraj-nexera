@@ -174,10 +174,10 @@ export default function ServicesPage() {
             {tiers.map((tier, i) => (
               <Reveal key={tier.name} delay={i * 0.1}>
                 <div
-                  className={`relative flex flex-col rounded-3xl border p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/20 hover:shadow-lg hover:shadow-brand-500/5 ${
+                  className={`relative flex flex-col rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-500/5 ${
                     tier.popular
-                      ? "border-brand-500/40 bg-brand-500/[0.06]"
-                      : "border-line bg-surface"
+                      ? "border border-brand-500/40 bg-brand-500/[0.06]"
+                      : "glass-card"
                   }`}
                 >
                   {tier.popular && (
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                     {tier.tagline}
                   </p>
 
-                  <div className="mt-4 rounded-xl border border-line bg-surface px-4 py-3">
+                  <div className="mt-4 rounded-xl glass-card px-4 py-3">
                     <p className="text-xs font-medium text-brand-400">Best For</p>
                     <p className="mt-1 text-xs leading-relaxed text-ink-muted">
                       {tier.bestFor}

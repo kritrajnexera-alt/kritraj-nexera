@@ -37,13 +37,13 @@ export default function BeforeAfter() {
           className="rounded-3xl glass-card-glow p-8"
         >
           <div className="mb-6 flex items-center gap-2">
-            <AlertCircle className="h-5 w-5 text-red-600" />
+            <AlertCircle className="h-5 w-5 text-rose-500" />
             <h3 className="font-semibold text-ink-muted">Manual process</h3>
           </div>
           <ul className="space-y-4">
             {manual.map(({ icon: Icon, text }) => (
               <li key={text} className="flex items-start gap-3">
-                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-red-600" />
+                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-rose-500" />
                 <span className="text-ink-muted">{text}</span>
               </li>
             ))}
@@ -56,7 +56,7 @@ export default function BeforeAfter() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: easeOut, delay: 0.1 }}
-          className="rounded-3xl border border-brand-500/30 bg-brand-500/[0.05] p-8"
+          className="rounded-3xl glass-card-glow p-8"
         >
           <div className="mb-6 flex items-center gap-2">
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-500">
