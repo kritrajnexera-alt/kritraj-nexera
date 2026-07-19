@@ -35,7 +35,7 @@ function FlowCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, ease: easeOut, delay }}
-      className={`rounded-2xl border border-line bg-surface p-4 shadow-sm shadow-brand-900/5 ${className ?? ""}`}
+      className={`rounded-2xl glass-card p-4 shadow-sm shadow-brand-900/5 ${className ?? ""}`}
     >
       {children}
     </motion.div>

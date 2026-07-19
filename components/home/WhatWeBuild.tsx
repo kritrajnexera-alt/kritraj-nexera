@@ -33,7 +33,7 @@ export default function WhatWeBuild() {
           {items.map(({ icon: Icon, label, desc }) => (
             <div
               key={label}
-              className="rounded-2xl border border-line bg-surface p-6"
+              className="rounded-2xl glass-card-glow p-6"
             >
               <span className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-400">
                 <Icon className="h-5 w-5" />

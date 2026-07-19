@@ -47,7 +47,7 @@ export default function ProcessTimeline() {
               </div>
 
               {/* Content card */}
-              <div className="rounded-2xl border border-line bg-surface p-5">
+              <div className="rounded-2xl glass-card p-5">
                 <h3 className="font-semibold text-ink">{step.title}</h3>
               </div>
             </motion.div>

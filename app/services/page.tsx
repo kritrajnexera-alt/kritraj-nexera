@@ -154,7 +154,7 @@ export default function ServicesPage() {
               <Link
                 key={href}
                 href={href}
-                className="group rounded-2xl border border-line bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/20 hover:shadow-lg hover:shadow-brand-500/5"
+                className="group rounded-2xl glass-card-glow p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-500/5"
               >
                 <span className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-400 transition-colors group-hover:bg-brand-500/20">
                   <Icon className="h-5 w-5" />
@@ -218,7 +218,7 @@ export default function ServicesPage() {
 
           {/* Recurring care plan teaser */}
           <Reveal delay={0.2}>
-            <div className="mt-16 rounded-3xl border border-line bg-surface/50 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/20 hover:shadow-lg hover:shadow-brand-500/5 sm:p-10">
+            <div className="mt-16 rounded-3xl glass-card-glow p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-500/5 sm:p-10">
             <h3 className="text-lg font-semibold text-ink">Recurring Care Plan</h3>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-muted">
               Your business keeps evolving, and your automation should evolve
@@ -248,7 +248,7 @@ export default function ServicesPage() {
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {includedItems.map((item, i) => (
             <Reveal key={item.label} delay={i * 0.05} direction={i % 2 === 0 ? "up" : "down"} distance={16}>
-              <div className="flex items-center gap-3 rounded-2xl border border-line bg-surface p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-500/20 hover:shadow-md hover:shadow-brand-500/5"
+              <div className="flex items-center gap-3 rounded-2xl glass-card p-4 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-brand-500/5"
               >
                 <item.icon className="h-5 w-5 shrink-0 text-brand-400" />
                 <span className="text-sm text-ink">{item.label}</span>
@@ -274,7 +274,7 @@ export default function ServicesPage() {
         <div className="flex flex-wrap justify-center gap-3">
           {techStack.map((tech, i) => (
             <Reveal key={tech} delay={i * 0.04} direction="up" distance={16}>
-              <div className="rounded-xl border border-line bg-surface px-5 py-3 text-sm font-medium text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-500/30 hover:shadow-md hover:shadow-brand-500/5">
+              <div className="rounded-xl glass-card px-5 py-3 text-sm font-medium text-ink transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-brand-500/5">
                 {tech}
               </div>
             </Reveal>

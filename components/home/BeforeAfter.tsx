@@ -34,7 +34,7 @@ export default function BeforeAfter() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: easeOut }}
-          className="rounded-3xl border border-line bg-surface p-8"
+          className="rounded-3xl glass-card-glow p-8"
         >
           <div className="mb-6 flex items-center gap-2">
             <AlertCircle className="h-5 w-5 text-red-600" />

@@ -49,7 +49,7 @@ export default function FAQAccordion() {
         {faqs.map((faq, i) => (
           <div
             key={i}
-            className="rounded-2xl border border-line bg-surface overflow-hidden"
+            className="rounded-2xl glass-card-glow overflow-hidden"
           >
             <button
               onClick={() => toggle(i)}

@@ -199,7 +199,7 @@ export default function AboutPage() {
           <div className="grid gap-6 md:grid-cols-3">
             {values.map(({ icon: Icon, title, desc }, i) => (
               <Reveal key={title} delay={i * 0.1} direction={i % 2 === 0 ? "up" : "down"}>
-                <div className="rounded-2xl border border-line bg-surface p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/20 hover:shadow-lg hover:shadow-brand-500/5">
+                <div className="rounded-2xl glass-card-glow p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-500/5">
                 <span className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400">
                   <Icon className="h-5 w-5" />
                 </span>
@@ -222,7 +222,7 @@ export default function AboutPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {trustCards.map(({ icon: Icon, title, desc }, i) => (
               <Reveal key={title} delay={i * 0.08} direction={i % 2 === 0 ? "up" : "down"}>
-                <div className="rounded-2xl border border-line bg-surface p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/20 hover:shadow-lg hover:shadow-brand-500/5">
+                <div className="rounded-2xl glass-card-glow p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-500/5">
               <span className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/15 text-brand-400">
                 <Icon className="h-5 w-5" />
               </span>

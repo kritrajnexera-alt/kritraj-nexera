@@ -133,7 +133,7 @@ export default function ConsultantPage() {
       {/* Case study */}
       <Section>
         <Reveal>
-          <div className="mx-auto max-w-2xl rounded-3xl border border-line bg-surface p-8 text-center sm:p-10">
+          <div className="mx-auto max-w-2xl rounded-3xl glass-card-glow p-8 text-center sm:p-10">
             <p className="mb-2 text-xs font-medium text-brand-400">
               Real result
             </p>

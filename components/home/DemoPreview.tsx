@@ -41,7 +41,7 @@ export default function DemoPreview() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, ease: easeOut, delay: 0.1 }}
-        className="mx-auto max-w-lg rounded-2xl border border-line bg-surface p-6"
+        className="mx-auto max-w-lg rounded-2xl glass-card p-6"
       >
         <div className="mb-4 text-center">
           <p className="text-sm font-semibold text-ink">Automation Workflow</p>

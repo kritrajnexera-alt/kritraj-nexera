@@ -43,7 +43,7 @@ export default function ContactPage() {
           <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr]">
             {/* Form */}
             <Reveal direction="left" >
-              <div className="rounded-3xl border border-line bg-surface p-8 sm:p-10">
+              <div className="rounded-3xl glass-card-glow p-8 sm:p-10">
                 <ContactForm />
               </div>
             </Reveal>

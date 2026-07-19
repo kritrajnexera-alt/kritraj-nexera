@@ -51,7 +51,7 @@ export default function SystemFlow() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, ease: easeOut, delay: i * 0.1 }}
-              className="h-full rounded-2xl border border-line bg-surface p-6"
+              className="h-full rounded-2xl glass-card-glow p-6"
             >
               <div className="mb-4 flex items-center gap-3">
                 <span className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-brand-500/15 text-brand-400">

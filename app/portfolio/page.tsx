@@ -56,7 +56,7 @@ export default function PortfolioPage() {
           <div className="mx-auto max-w-4xl space-y-16">
             {projects.map((project) => (
               <Reveal key={project.title}>
-                <div className="overflow-hidden rounded-3xl border border-line bg-surface">
+                <div className="overflow-hidden rounded-3xl glass-card-glow">
                   <div className="grid md:grid-cols-2">
                     <div className="flex flex-col justify-center p-8 sm:p-10">
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-400/20 bg-brand-400/10 px-3 py-1 text-xs font-medium text-brand-400 w-fit">
